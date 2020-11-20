@@ -9,3 +9,6 @@ https://github.com/YlliPrapashtica/INT20_21_Gr17
 
 https://colorlib.com/preview/#bluesky  // Homepage , Contact Us, Properties
 https://colorlib.com/preview/#dreamrs   //Services, About us
+
+Ylli =header,footer,testimonals,legend
+Petriti=tjerat 
