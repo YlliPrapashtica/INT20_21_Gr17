@@ -1,0 +1,11 @@
+1.Homepage    Ylli / Petriti
+2. Ndertesat  Petriti
+3. Services   Endriti
+4. Na kontaktoni Greses
+5. Rreth nesh.   Vesa
+6. Add Property   Ylli   -- Vet dizajn
+
+https://github.com/YlliPrapashtica/INT20_21_Gr17
+
+https://colorlib.com/preview/#bluesky  // Homepage , Contact Us, Properties
+https://colorlib.com/preview/#dreamrs   //Services, About us
