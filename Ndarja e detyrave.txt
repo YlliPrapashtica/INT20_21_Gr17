@@ -1,8 +1,8 @@
-1.Homepage    Ylli / Petriti
+1. Homepage    Ylli / Petriti
 2. Ndertesat  Petriti
-3. Services   Endriti
+3. Services   Vesa
 4. Na kontaktoni Greses
-5. Rreth nesh.   Vesa
+5. Rreth nesh.   Endriti
 6. Add Property   Ylli   -- Vet dizajn
 
 https://github.com/YlliPrapashtica/INT20_21_Gr17
