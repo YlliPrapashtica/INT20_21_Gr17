@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link href="contact.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="contacts">
+        <div class="contact-info">
+            
+            <div class="title">
+                Get in touch with us
+            </div>
+
+            <div class="subtitle">
+                Say hello!
+            </div>
+            
+            <div class="contact-info-txt">
+                <p>
+                    Donec ullamcorper nulla non metus auctor fringi lla.
+                    Curabitur blandit tempus porttitor.
+                    Sed lectus urna, ultricies sit amet risus eget.
+                </p>
+            </div>
+
+           <div class="contact-info-content">
+               <ul class="contact-info-list">
+                   <li>
+                       <div>Address: </div>
+                    </li>
+                       <div>1481 Creekside lane Avila Beach</div>
+                   
+                   <li>
+                       <div>Phone: </div>
+                    </li>
+                       <div>+53 345 4875 67890</div>
+                   
+                   <li>
+                    <div>Email: </div>
+                   </li>
+                    <div>youremail@gmail.com</div>
+                    
+               </ul>
+            </div>
+        </div>
+		<div class="wrap-contact">
+			<form class="contact-form">
+				
+				<div class="wrap-input">
+					<input class="input" type="text" name="name" placeholder="Full Name">
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input">
+					<input class="input" type="text" name="email" placeholder="E-mail">
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input">
+					<input class="input" type="text" name="subject" placeholder="Subject">
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input">
+					<textarea class="messages" name="message" placeholder="Your Message"></textarea>
+				</div>
+
+				<div class="contact-btn">
+					<button class="contact-form-btn">
+						SEND
+					</button>
+				</div>
+			</form>
+        </div>
+    </div>
+    <div class="map">
+        <div id="google-map" class="google-map">
+        <div class="map-container">
+        <div id="map"></div>
+        </div>
+<!-- <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+<a href='https://addmap.net/'>add google map to your website</a> <script type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=3a2b0cf095ce60426ed59435d84add362f8d8658'></script> -->
+
+<!-- <script >
+    $('#location-button').click(function(){
+      if(navigator.geolocation)
+        navigator.geolocation.getCurrentPosition(function(position){
+          console.log(position);
+    $.get("https://maps.googleapis.com/maps/api/geocode/json?&latlng="+position.coords.latitude +","+position.coords.longitude +"&sensor=false",function(data){
+            console.log(data);
+        });
+        })
+      else
+        console.log("Geolocation not supported!");
+  
+  });
+  </script>
+      <p id="date"></p>
+  <script>
+  var date = new Date(2020,22,10,31,23,23);
+  document.getElementById("date").innerHTML = date.toDateString();
+  </script> -->
+  </body>
+</html>
+
