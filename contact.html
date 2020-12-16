@@ -3,7 +3,6 @@
   <head>
     <title>Contact Us</title>
     <link href="CSS/contact.css" rel="stylesheet"/>
-    
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -95,33 +94,49 @@
 			</form>
         </div>
     </div>
-    <div class="map">
-        <div id="google-map" class="google-map">
-        <div class="map-container">
-        <div id="map"></div>
-        </div>
-<!-- <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
-<a href='https://addmap.net/'>add google map to your website</a> <script type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=3a2b0cf095ce60426ed59435d84add362f8d8658'></script> -->
+<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+<script>
+function showPosition() {
+    if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showMap, showError);
+    } else {
+        alert("Your browser does not support HTML5 geolocation.");
+    }
+}
+function showMap(position) {
+    lat = position.coords.latitude;
+    long = position.coords.longitude;
+    var latlong = new google.maps.LatLng(lat, long);
+    
+    var myOptions = {
+        center: latlong,
+        zoom: 16,
+        mapTypeControl: true,
+        navigationControlOptions: {
+            style:google.maps.NavigationControlStyle.SMALL
+        }
+        
+    }
+    
+    var map = new google.maps.Map(document.getElementById("embedMap"), myOptions);
+    var marker = new google.maps.Marker({ position:latlong, map:map, title:"You are here!" });
+}
 
-<!-- <script >
-    $('#location-button').click(function(){
-      if(navigator.geolocation)
-        navigator.geolocation.getCurrentPosition(function(position){
-          console.log(position);
-    $.get("https://maps.googleapis.com/maps/api/geocode/json?&latlng="+position.coords.latitude +","+position.coords.longitude +"&sensor=false",function(data){
-            console.log(data);
-        });
-        })
-      else
-        console.log("Geolocation not supported!");
-  
-  });
-  </script>
-      <p id="date"></p>
-  <script>
-  var date = new Date(2020,22,10,31,23,23);
-  document.getElementById("date").innerHTML = date.toDateString();
-  </script> -->
-  </body>
+function showError(error) {
+    if(error.code == 1) {
+        result.innerHTML = "You've decided not to share your position. We won't ask you again.";
+    } else if(error.code == 2) {
+        result.innerHTML = "The network is down or the positioning service can't be reached.";
+    } else if(error.code == 3) {
+        result.innerHTML = "The attempt timed out before it could get the location data.";
+    } else {
+        result.innerHTML = "Geolocation failed due to unknown error.";
+    }
+}
+</script>
+</head>
+    <button type="button" onclick="showPosition();">Show My Position on Google Map</button>
+    <div id="embedMap" style="width: 100%; height: 500px;">
+    </div>
+
 </html>
-
