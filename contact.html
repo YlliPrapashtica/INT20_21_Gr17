@@ -68,7 +68,7 @@
 			<form class="contact-form">
 				
 				<div class="wrap-input">
-					<input class="input" type="text" name="name" placeholder="Full Name">
+					<input class="input" type="text" id="name" placeholder="Full Name">
 					<span class="focus-input"></span>
 				</div>
 
@@ -150,5 +150,29 @@ function showError(error) {
               };
             setInterval(everyOneSecond, 1000)
           };</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+
+    if(localStorage) {
+        $(document).ready(function() {
+            $(".contact-btn").click(function() {
+          var name = $("#name").val();
+          var email = $("#email").val();
+          var subject = $("#subject").val();
+          var message = $("message").val();
+
+                localStorage.setItem("full_name", name, "e_mail", email, "subject", subject, "message", message);
+                alert("Your information is saved!");
+            });
+            $(".contact-btn").click(function() {
+                alert("Hi, " + localStorage.getItem("full_name"));
+            });
+        });
+    } else {
+        alert("Sorry, your browser do not support local storage.");
+    }
+    </script>
 
 </html>
