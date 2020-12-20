@@ -51,6 +51,7 @@
 li{
     color: #3f6fce;
     margin-block-start: 1em;
+    list-style-type: none;
 }
 .input{
     padding-left: 38px;
@@ -81,4 +82,14 @@ li{
     background: #f1f6f9;
     width: 100%;
     padding-top: 20px;
+}
+.position{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    border: none;
+    color: #3f6fce;
+    cursor: pointer;
+    text-align: center;
+    padding: 13px;
+    background: none;
 }
