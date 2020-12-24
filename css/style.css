@@ -61,5 +61,211 @@ width: 30%;
     border-color: #3f6fce;
 }
 
+@keyframes slideAnimate{
+    from {opacity: .2;}
+    to {opacity: 1;}
+}
 
+@keyframes slideTextAnimate{
+    from{left:0}
+    to{left:20%}
+}
+
+.slideshow{
+    position: relative;
+    width: 100%;
+}
+.slideshow .slides{
+    display: none;
+    animation-name: slideAnimate;
+    animation-duration: .3s;
+}
+.prev{
+    position: absolute;
+    top:50%;
+    cursor: pointer;
+    font-size: 20px;
+    width: auto;
+    color:white;
+    padding: 20px;
+    margin:auto;
+}
+.next{
+    position: absolute;
+    cursor: pointer;
+
+    top:50%;
+    font-size: 20px;
+    width: auto;
+    color:white;
+    padding: 20px;
+    margin:auto;
+
+    right: 0;
+}
 /*  END OF HEADER STYLE */
+.slides img{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+.next:hover, .prev:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.slideText{
+    position: absolute;
+    animation-name: slideTextAnimate;
+    animation-duration: .5s;
+    top:50%;
+    left: 20%;
+    transform: translate(-20%,-50%);
+    color:white;
+    margin:0 10px;
+}
+.slideText h1{
+    font-size: 50px;
+}
+.slideText .sliderSpecs{
+    background-image: linear-gradient(to right,#3e70d6,#ff9900);
+    color:white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.slideText .slider-icons{
+    height: 32px;
+    width: 32px;
+
+}
+
+.slideText .slideBtn{
+    font-size: 16px;
+    padding: 10px;
+    border:1px white solid;
+    border-radius: 50px;
+    background-color: #ff9900;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition:background-color .5s;
+    display: block;
+}
+
+.point {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    background-color: #d1d1d1;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.point:hover, .active-point{
+    background-color: #3e70d6;
+}
+.slideNav{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.property-cities{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f4f4f4;
+}
+.property-cities .cities-headline{
+    color: #252525;
+    text-align: center;
+    padding:15px 0px;
+}
+.cities-row{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+}
+.city{
+    margin-bottom: 20px;
+    margin-right: 15px;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    width: 100%;
+}
+
+.city:hover .city-text{
+    visibility: visible;
+	opacity: 1;
+}
+
+
+.city-text{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to right,rgba(62, 112, 214,0.5), rgba(255, 153, 0,0.5));
+    opacity: 0;
+    visibility: hidden;
+    transition: all .8s ease
+}
+.city-text h4{
+    color:white;
+    font-weight: 600;
+    font-size: 30px;
+    position: absolute;
+    left:50%;
+    top:30%;
+    transform: translate(-50%,-30%);
+
+}
+.city img{
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 560px) {
+    .slideText .sliderSpecs{
+        background-image: linear-gradient(to right,#3e70d6,#ff9900);
+        color:white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 15px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+        padding: 9px 17px;
+        width: fit-content;
+    }
+    .slideText .sliderSpecs div{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+  } 
+
+@media screen  and (max-width:864px){
+    .cities-row{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: space-between;
+    }
+   
+   
+}

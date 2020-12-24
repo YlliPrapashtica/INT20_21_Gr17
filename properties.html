@@ -274,8 +274,8 @@
         </div>
 
         <div class="pagination-row">
-            <div class="pagination"><a href="#"><<</a></div>
-            <div class="pagination"><a href="#">1</a></div>
+            <div class="pagination "><a href="#"><<</a></div>
+            <div class="pagination"><a href="#" class="pagination-active">1</a></div>
             <div class="pagination"><a href="#">2</a></div>
             <div class="pagination"><a href="#">3</a></div>
             <div class="pagination"><a href="#">>></a></div>
@@ -288,12 +288,30 @@
     <div id="newsletter">
         <div class="newsletter-content">
             <h1>Regjitro Email Per Ofertat Me Te Mira</h1>
-            <form  method="post">
-                <input type="text" class="newsletter-email" placeholder="Emaili Juaj"><br>
+            <form  method="post" id="newsletterForm">
+                <input type="text" id="newsletterEmail" class="newsletter-email" placeholder="Emaili Juaj"><br>
                 <button type="submit" class="newsletter-submit" >Regjistro</button>
 
             </form>
         </div>
     </div>
 </body>
+
+<script>
+    var form=document.getElementById('newsletterForm');
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+        
+        var email=document.getElementById('newsletterEmail');
+        if(email.value)
+        {
+            alert('Faleminderit per regjistrim '+email.value);
+            email.value='';
+        }
+        else{
+            alert('Email nuk guxon te jete i zbrazet');
+
+        }
+    });
+</script>
 </html>
