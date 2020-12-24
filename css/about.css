@@ -1,4 +1,32 @@
 .aboutImage{
 	position: relative;
+	
 	width: 100%;
+}
+
+#header{
+	position: relative;
+	width: 100%;
+}
+.First-image {
+  position: absolute;
+  bottom: 20%;
+  left: 60%;
+  background-color: transparent;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.row {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 60px;
+}
+.row2 {
+font-family: fantasy;
+font-size: 100px;
+}
+.tabela1 {
+   border-spacing:25px;
+
+
 }
