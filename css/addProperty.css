@@ -1,0 +1,21 @@
+
+#preview{
+    width:150px;
+}
+#uploadProperty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    width: 70%;
+    margin: 50px auto;
+}
+#uploadProperty > div{
+    width: 100%;;
+}
+#imgInput{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

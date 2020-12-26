@@ -4,6 +4,8 @@
     <title>Contact Us</title>
     <link href="CSS/contact.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js" ></script>
   </head>
   <body>
     <div id="header"> 
@@ -94,43 +96,8 @@
 			</form>
         </div>
     </div>
-<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
-<script>
-function showPosition() {
-    if(navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showMap, showError);
-    } else {
-        alert("Your browser does not support HTML5 geolocation.");
-    }
-}
-function showMap(position) {
-    lat = position.coords.latitude;
-    long = position.coords.longitude;
-    var latlong = new google.maps.LatLng(lat, long);
-    
-    var myOptions = {
-        center: latlong,
-        zoom: 10,
-        mapTypeControl: true,
-        navigationControlOptions: {
-            style:google.maps.NavigationControlStyle.SMALL
-        }
-        
-    }
-    
-    var map = new google.maps.Map(document.getElementById("embedMap"), myOptions);
-    var marker = new google.maps.Marker({ position:latlong, map:map});
-}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1qy85l5O0_fpIllK8nLI1GOiza-tTWNo&callback=initMap" type="text/javascript"></script>
 
-function showError(error) {
-    if(error.code == 1) {
-        result.innerHTML = "You've decided not to share your position.";
-    } else if(error.code == 2) {
-        result.innerHTML = "The network is down or the positioning service can't be reached.";
-    } 
-}
-</script>
-</head>
 <div>
     <button class="position" type="button" onclick="showPosition();">Position on Google Map</button>
     <div id="embedMap" style="width: 100%; height: 500px;">
@@ -148,28 +115,68 @@ function showError(error) {
             setInterval(everyOneSecond, 1000*3)
           };</script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<script>
 
-    if(localStorage) {
-        $(document).ready(function() {
-            $(".contact-btn").click(function() {
-          var name = $("#name").val();
-          var email = $("#email").val();
-          var subject = $("#subject").val();
-          var message = $("message").val();
+<div id="footer">
+    <div id="logoText">
+        <img src="img/logo.png" alt="" >
+        <p>
+            Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.
+        </p>
 
-                localStorage.setItem("full_name", name, "e_mail", email, "subject", subject, "message", message);
-                alert("Your information is saved!");
-            });
-            $(".contact-btn").click(function() {
-                alert("Hi, " + localStorage.getItem("full_name"));
-            });
-        });
-    } else {
-        alert("Sorry, your browser do not support local storage.");
-    }
-    </script>
+    </div>
+    <div id="footerProperties">
+        <h4 id="footerTitle"> Latest Properties</h4>
+        <div id="footerPropertiesContainer">
+            <div class="footerProperty">
+                <img class="footerImg" src="img/5.jpg" alt="">
+                <div class="propertyInfo">
+                    <h6>Titulli</h6>
+                    <p>Emri i prones</p>
+                    <span> $900</span>
+    
+                </div>
+    
+            </div>
+            <div class="footerProperty">
+                <img class="footerImg" src="img/5.jpg" alt="">
+                <div class="propertyInfo">
+                    <h6>Titulli</h6>
+                    <p>Emri i prones</p>
+                    <span> $900</span>
+    
+                </div>
+    
+            </div>
+            <div class="footerProperty">
+                <img class="footerImg" src="img/5.jpg" alt="">
+                <div class="propertyInfo">
+                    <h6>Titulli</h6>
+                    <p>Emri i prones</p>
+                    <span> $900</span>
+    
+                </div>
+    
+            </div>
 
+        </div>
+       
+
+    </div>
+</div>
+<div id="footerMenu">
+    <div id="callUsFooter">
+        <a href="tel:+38349642136"> Call us at +38349642136 </a>
+    </div>
+    <div id="menuFooter">
+        <a href="index.html" class="menu-page "> Home </a> 
+            <a href="about.html" class="menu-page"> About Us </a>
+            <a href="properties.html" class="menu-page"> Properties </a>
+            <a href="services.html" class="menu-page"> Services </a>
+            <a href="addProperty.html" class="menu-page "> Add a Property </a>
+            <a href="contact.html" class="menu-page"> Contact Us </a>
+    </div>
+
+</div>
+</body>
 </html>
