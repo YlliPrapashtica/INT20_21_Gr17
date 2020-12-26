@@ -29,13 +29,43 @@
 
     </script>
      
-    <form id="uploadProperty" method="POST" action="/" accept="image/*">
+    <form id="uploadProperty" method="POST" action="/" >
 
-        <div id="imgInput">
+        <div class="formInput">
+            <input class="input" type="text" id="name" placeholder="Full Name">
+            <span class="focus-input"></span>
+        </div>
+
+        <div class="formInput">
+            <input class="input" type="text" name="email" placeholder="E-mail">
+            <span class="focus-input"></span>
+        </div>
+
+        <div class="formInput" id="imgInput">
             <label for="imageFile"> Upload Property Image</label>
             <input type="file" name="imageFile" id="file"  onchange=previewImage();>
             <img id="preview">
         </div>
+
+        <div class="formInput">
+            <input class="input" type="text" name="subject" placeholder="Subject">
+            <span class="focus-input"></span>
+        </div>
+
+        <div class="formInput">
+            <textarea class="messages" name="message" placeholder="Your Message"></textarea>
+        </div>
+
+        <div class="formInput">
+            <button class="contact-form-btn">
+                SEND
+            </button>
+        </div>
+        <div class="formInput">
+            <label for="name"></label>
+
+        </div>
+        
     </form>
 
 <div id="footer">
