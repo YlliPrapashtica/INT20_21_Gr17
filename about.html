@@ -10,6 +10,7 @@
     
 </head>
 <body>
+	<button onclick="topFunction()" id="TOPButton" title="Go to top">Top of the page</button>
 	<div style="background-image: url(img/about.jpg); ">
 	
    
@@ -46,7 +47,7 @@
       <td>
         
       <p id="right" style="text-align: center; font-size: 45px; color: black;"><b>Hello City We are<br> leader in <span style="color: rgb(255,255, 255);">proparties.</span></b></p>
-      <p style="text-align: right; color: white;font-family:monospace; text-shadow: 2px 2px 8px #000000; font-size: 20px;"><b>This is not important This is not important This is not important<br> this is not important this is not important this is not important <br>this is not important this is not important</p>
+      <p style="text-align: right; color: white;font-family:monospace; text-shadow: 2px 2px 8px #000000; font-size: 20px;"><b> With a staff of over 50 employees, with a high  potential, which thanks to the dedication, professionalism and extremely high working capacity, correctness and competitive prices has managed to rise to the pedestal of a leader in its scope.<br>Many years of experience is the backbone of our ability.  </p>
      </td>
     </tr>
     </table>
@@ -55,22 +56,22 @@
 </div>
     <div class="row"> 
   <div class="column">
-    <img src="img/1.jpg" >
-    <img src="img/4.jpg" >
+    <img src="img/1.jpg" alt="Exterior" title="Exterior" >
+    <img src="img/4.jpg" alt="Interior" title="Interior" >
    
  
    
   </div>
   <div class="column">
-    <img src="img/2.jpeg" >
-    <img src="img/5.jpg" >
+    <img src="img/2.jpeg" alt="Exterior" title="Exterior" >
+    <img src="img/5.jpg" alt="Interior" title="Interior">
    
     
    
   </div>  
   <div class="column">
-    <img src="img/3.jpg">
-    <img src="img/6.jpg" >
+    <img src="img/3.jpg" alt="Exterior" title="Exterior">
+    <img src="img/6.jpg" alt="Interior" title="Interior">
     
    
     </div>
@@ -144,4 +145,24 @@
 </div>
 
 </body>
+<script>
+	
+mybutton = document.getElementById("TOPButton");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+ 
+  document.documentElement.scrollTop = 0; 
+}
+</script>
 </html>
