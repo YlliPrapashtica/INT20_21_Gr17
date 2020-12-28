@@ -116,9 +116,32 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   opacity: 0.6;
   transition: 0.3s;
   cursor:pointer;
- border-radius: 15px;
+  border-radius: 15px;
+ 
 }
 #TOPButton1:hover {background-color: #000000}
 #img{
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+ol {
+  background: #cce5ff;;
+  padding: 20px;
+}
+
+ul {
+  
+  background: #cce5ff;
+  padding: 20px;
+  cursor:pointer;
+}
+
+ol li {
+  background: #3399ff;
+  margin: 5px;
+  cursor:pointer;
+}
+
+ul li {
+  background: #3399ff;
+  margin: 5px;
 }
