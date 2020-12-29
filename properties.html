@@ -269,7 +269,14 @@
                     </div>
                 </div>
             </div>
-            
+
+        </div>
+        <div class="property-row" id="dynamicProperties">
+
+        </div>
+
+        <div class="btn-holder">
+            <button class="more-btn" id="loadMore">Me Shume</button>
 
         </div>
 
@@ -283,13 +290,16 @@
         
     </div> 
 
-    
+
 
     <div id="newsletter">
         <div class="newsletter-content">
             <h1>Regjitro Email Per Ofertat Me Te Mira</h1>
+            <p style="margin:5px 0;">Pas regjistrimit email mbetet <mark>pergjithmone</mark> </p>
             <form  method="post" id="newsletterForm">
                 <input type="text" id="newsletterEmail" class="newsletter-email" placeholder="Emaili Juaj"><br>
+                <label for="iAgree">Pajtohem me kushtet</label>
+                <input type="checkbox" id="iAgree" name="i_agree"> <br>
                 <button type="submit" class="newsletter-submit" >Regjistro</button>
 
             </form>
@@ -346,6 +356,7 @@
 <div id="footerMenu">
     <div id="callUsFooter">
         <a href="tel:+38349642136"> Call us at +38349642136 </a>
+        <a href="mailto:realestatepros@gmail.com">Mail Us:realestatepros@gmail.com</a>
     </div>
     <div id="menuFooter">
         <a href="index.html" class="menu-page "> Home </a> 
@@ -353,27 +364,63 @@
             <a href="properties.html" class="menu-page"> Properties </a>
             <a href="services.html" class="menu-page"> Services </a>
             <a href="addProperty.html" class="menu-page "> Add a Property </a>
-            <a href="contact.html" class="menu-page"> Contact Us </a>
+            <a href="contact.html" class="menu-page" target="_blank"> Contact Us </a>
     </div>
 
 </div>
 </body>
-
+<script src="js/web_worker.js"></script>
 <script>
+    function Property(title,loc,price,image){
+        this.title=title;
+        this.loc=loc;
+        this.price=price;
+        this.image=image;
+    }
+
+    function loadMoreProperties(){
+
+      
+            var worker=new Worker(URL.createObjectURL(new Blob(["("+listPropeties.toString()+")()"], {type: 'text/javascript'})));
+
+            worker.onmessage=function(event){
+                var prop=new Property(event.data.title,event.data.loc,event.data.price,event.data.image);
+                var dynamicProperties=document.getElementById('dynamicProperties');
+                dynamicProperties.innerHTML+='  <div class="property"><div class="property-image"> <a href="#"><img src="'+prop.image+'" alt=""></a> </div><div class="property-text"><div class="property-title"><a href="#">'+prop.title+'</a></div><div class="property-location">'+prop.loc+'</div><div class="property-price">'+prop.price+'</div><div class="contact-owner"> <button>Kontakto Pronarin</button>                    </div>                </div>                                <div class="property-specs">                    <div>                        <div class="spec-icon">                                <img src="img/icons/icon_area.png" alt="">                            </div>                            <span>5000ft</span>                    </div>                    <div>                        <div class="spec-icon">                            <img src="img/icons/icon_parking.png" alt="">                       </div>                       <span>1</span>                    </div>                    <div>                        <div class="spec-icon">                            <img src="img/icons/icon_shower.png" alt="">                       </div>                       <span>2</span> </div></div> </div>'
+            }
+    }
+
+    function validateEmail(email) {
+        const re =/^\S+@\S+$/;
+        return re.test(String(email).toLowerCase());
+    }
     var form=document.getElementById('newsletterForm');
+    var loadMore=document.getElementById('loadMore');
+    loadMore.addEventListener('click',function(e){
+
+        loadMoreProperties();
+        this.style.display='none';
+    });
     form.addEventListener('submit',function(e){
         e.preventDefault();
         
         var email=document.getElementById('newsletterEmail');
-        if(email.value)
-        {
-            alert('Faleminderit per regjistrim '+email.value);
-            email.value='';
+        var agree=document.getElementById('iAgree');
+        if(agree.checked){
+               if(validateEmail(email.value))
+               {
+                   alert('Faleminderit per regjistirmin '+email.value);
+                   email.value='';
+                   agree.checked=false;
+               }
+               else{
+                   alert('Email nuk eshte valid ose eshte i zbrazet');
+               }
         }
         else{
-            alert('Email nuk guxon te jete i zbrazet');
-
+            alert('Duhet te pranosh kushtet per tu regjistruar');
         }
+        
     });
 </script>
 </html>

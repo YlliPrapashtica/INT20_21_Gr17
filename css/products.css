@@ -277,3 +277,24 @@ div.heroText{
         padding-right: 50px;
     }
   } 
+
+.more-btn{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    display: inline-block;
+    font-weight: 400;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+
+.btn-holder{
+    padding: 0 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}

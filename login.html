@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Document</title>
+  
+</head>
+<body>
+   
+    <div id="header"> 
+        <div class="logo-container"> <img class="logo" src="img/logo.png" alt=""></div>
+        <div class="menu-links">
+            <a href="index.html" class="menu-page isActive"> Home </a> 
+            <a href="about.html" class="menu-page"> About Us </a>
+            <a href="properties.html" class="menu-page"> Properties </a>
+            <a href="services.html" class="menu-page"> Services </a>
+            <a href="addProperty.html" class="menu-page"> Add a Property </a>
+            <a href="contact.html" class="menu-page"> Contact Us </a>
+    </div>
+
+        <div class="contact-us">
+            <a href="tel:+38349642136"> Call us at +38349642136 </a>
+        </div>
+    </div>
+
+    <section id="loginSection">
+        <form method="POST" id="loginForm" >
+            <div id="showError" style="font-size: 20px;padding: 10px; margin-bottom: 10px;">
+            
+            </div>
+            <label for="userEmail">Email:</label>
+            <input type="email" id="userEmail" class="formInput"  name="email">
+            <label for="userPassword">Password:</label>
+            <input type="password" name="password" class="formInput" id="userPassword">
+            <small style="margin-bottom: 10px;">Passwordi duhet te permbaje te pakten nje shkronje te madhe nje te vogel nje numer dhe nje karakter special</small>
+            <label>I am:</label>
+            <div class="userRoles">
+                <div>  
+                     <label for="admin">Administrator</label>
+                    <input type="radio" name="userType" class="formInput"  id="admin" value="Administrator">
+                </div>
+                <div>
+                    <label for="seller">Seller</label>
+                    <input type="radio" name="userType" class="formInput" id="seller" value="Seller">
+                </div>
+                <div>
+                    <label for="buyer">Buyer</label>
+                    <input type="radio" name="userType" class="formInput" id="buyer" value="Buyer">
+                </div>
+                  
+            </div>
+            
+            <input type="submit" class="submitBtn" value="Login">
+        </form>
+    </section>
+
+    <div id="footer">
+        <div id="logoText">
+            <img src="img/logo.png" alt="" >
+            <p>
+                Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.
+            </p>
+    
+        </div>
+        <div id="footerProperties">
+            <h4 id="footerTitle"> Latest Properties</h4>
+            <div id="footerPropertiesContainer">
+                <div class="footerProperty">
+                    <img class="footerImg" src="img/5.jpg" alt="">
+                    <div class="propertyInfo">
+                        <h6>Title</h6>
+                  <p>Property name</p>
+                  <span> $900</span>
+  
+              </div>
+  
+          </div>
+          <div class="footerProperty">
+              <img class="footerImg" src="img/5.jpg" alt="">
+              <div class="propertyInfo">
+                  <h6>Title</h6>
+                  <p>Property name</p>
+                  <span> $900</span>
+  
+              </div>
+  
+          </div>
+          <div class="footerProperty">
+              <img class="footerImg" src="img/5.jpg" alt="">
+              <div class="propertyInfo">
+                  <h6>Title</h6>
+                  <p>Property name</p>
+                  <span> $900</span>
+        
+                    </div>
+        
+                </div>
+    
+            </div>
+           
+    
+        </div>
+    </div>
+    <div id="footerMenu">
+        <div id="callUsFooter">
+            <a href="tel:+38349642136"> Call us at +38349642136 </a>
+            <br>
+            <p><abbr title="Real Estate Pros">R.E.P</abbr> All Rights Reserved <script>var date=new Date();document.write(date.getFullYear());</script></p>
+            <address>
+                Ulpiane Prishtine  Kosove 10000
+            </address>
+        </div>
+        <div id="menuFooter">
+            <a href="index.html" class="menu-page "> Home </a> 
+                <a href="about.html" class="menu-page"> About Us </a>
+                <a href="properties.html" class="menu-page"> Properties </a>
+                <a href="services.html" class="menu-page"> Services </a>
+                <a href="addProperty.html" class="menu-page "> Add a Property </a>
+                <a href="contact.html" class="menu-page"> Contact Us </a>
+
+        </div>
+    
+    </div>
+
+</body>
+<script>
+    var errorBox=document.getElementById('showError');
+    var disDomains=["101ead9a74b8.club",
+  "101price.co",
+  "101reasonstoquit.com",
+  "101searchen.com",
+  "101todaynews.site",
+  "1020986532.info",
+  "102508.icu",
+  "102comfort.site",
+  "102ndarmyband.com",
+  "102pc.site",
+  "102pinbahis.com",
+  "1034493459167.online",
+  "1034productions.com",
+  "104pinbahis.com",
+  "1050.gq",
+  "105402.com",
+  "105403.com",
+  "105415.com",
+  "105417.com",
+  "105427.com",
+  "105452.com",
+  "105455.com",
+  "105459.com",
+  "105463.com",
+  "105472.com",
+  "105482.com",
+  "105495.com",
+  "105514.com",
+  "105528.com",
+  "105554.com",
+  "105598.com",
+  "10562.app",
+  "105632.com",
+  "10564.app",
+  "10565.app",
+  "105672.com",
+  "10568.app",
+  "10569.app",
+  "105kg.ru",
+  "1069wjrj.com",
+  "10746.monster",
+  "107dronewaiver.com",
+  "107punto7.com",
+  "10bet881088.com",
+  "10bet88888.com",
+  "10bo888810.com",
+  "10bwy.space",
+  "10cafe.ru",
+  "10fpjo.us",
+  "10host.top",
+  "10kilo.us",
+  "10launcheds.com",
+  "10m.in",
+  "10mail.org",
+  "10mi.org",
+  "10minut.com.pl",
+  "10minut.xyz",
+  "10minute.cf",
+  "10minutemail.be",
+  "10minutemail.cf",
+  "10minutemail.co.uk",
+  "10minutemail.co.za",
+  ]
+    class User{
+        constructor(email,password,type){
+            this.email=email;
+            this.password=password;
+            this.type=type;
+        }
+        validateForm(){
+            var reEmail=/^\S+@\S+$/;
+            var rePass= /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+            if(reEmail.test(String(this.email).toLowerCase()) && rePass.test(this.password) ){
+               
+                try {
+                    errorBox.style.backgroundColor='#D4EDDA';
+                    errorBox.style.color="green";
+                    errorBox.innerText='Mirsevini '+this.type.value+" "+this.email;
+                    disDomains.forEach(element => {
+                        var re=new RegExp(element,"gi")
+                        if(this.email.match(re)) {
+                            var e =new Error('Invalid Email');
+                            e.name='invalid';
+                            throw e ;
+                        };
+                    });
+                
+                    
+                } catch (error) {
+                    console.log(error.name);
+                    if(error.name=='invalid'){
+                        errorBox.style.backgroundColor='#F8D7DA'
+                        errorBox.style.color="red";
+                        errorBox.innerText=error;
+                    }
+                    else{
+                       
+                        errorBox.style.backgroundColor='#F8D7DA'
+                        errorBox.style.color="red";
+                        errorBox.innerText='Duhet te zgjedhesh rolin';
+                    }
+                  
+                }
+               
+                
+            }
+            else{
+                errorBox.style.backgroundColor='#F8D7DA'
+                errorBox.style.color="red";
+                errorBox.innerText='Password ose Email nuk jane valide';
+
+            }
+        }
+        
+    }
+
+    var form=document.getElementById('loginForm');
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+        var email=document.getElementById('userEmail');
+        var password=document.getElementById('userPassword');
+        var type=document.querySelector('input[name=userType]:checked');
+        var user=new User(email.value,password.value,type);
+        user.validateForm();
+    })
+</script>
+</html>
