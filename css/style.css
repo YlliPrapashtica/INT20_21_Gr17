@@ -284,17 +284,19 @@ width: 30%;
     background-color: #3f6fce;
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
 }
 #logoText{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width:30%;
     padding: 30px;
     color: white;
     font-style: italic;
 }
 #footerProperties{
-    width: 70%; 
+    width: 60%;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -305,6 +307,8 @@ width: 30%;
 }
 .footerProperty{
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
 }
 .propertyInfo{
     margin-left: 20px;
@@ -328,8 +332,9 @@ width: 30%;
 #footerPropertiesContainer{
     
 display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding:0 30px 0 0;
+    padding: 0 30px;
 }
 
 #footerMenu{
@@ -342,6 +347,10 @@ display: flex;
     color: #3f6fce;
     text-decoration: none;
 
+}
+#menuFooter{
+    display: flex;
+    flex-wrap: wrap;
 }
 #menuFooter a{
     padding:0 20px;
