@@ -49,16 +49,19 @@
            <div class="contact-info-content">
                <ul class="contact-info-list">
                    <li>
+                    <img src="img\icons\address.png" alt="adr" style="padding-right: 5px; float:left;width:20px;height:20px;">
                        <div>Address: </div>
                     </li>
                        <div>1481 Creekside lane Avila Beach</div>
                    
                    <li>
+                    <img src="img/icons/telephone.png" alt="phone" style="padding-right: 5px;float:left;width:20px;height:20px;">
                        <div>Phone: </div>
                     </li>
                        <div>+53 345 4875 67890</div>
                    
                    <li>
+                    <img src="img/icons/mail-inbox.png" alt="email" style="padding-right: 5px; float:left;width:20px;height:20px;">
                     <div>Email: </div>
                    </li>
                     <div>youremail@gmail.com</div>
@@ -68,31 +71,37 @@
         </div>
 		<div class="wrap-contact">
 			<form class="contact-form">
-				
-				<div class="wrap-input">
+                <table cellpadding="5">
+				<tr>
+				<td class="wrap-input" style="padding-right: 65px;">
 					<input class="input" type="text" id="name" placeholder="Full Name">
 					<span class="focus-input"></span>
-				</div>
+                </td>
 
-				<div class="wrap-input">
+				<td class="wrap-input">
 					<input class="input" type="text" name="email" placeholder="E-mail">
 					<span class="focus-input"></span>
-				</div>
-
-				<div class="wrap-input">
+                </td>
+                </tr>
+                <tr>
+				<td colspan="2" class="wrap-input">
 					<input class="input" type="text" name="subject" placeholder="Subject">
 					<span class="focus-input"></span>
-				</div>
-
-				<div class="wrap-input">
+                </td>
+                </tr>
+                <tr>
+				<th colspan="2" class="wrap-input">
 					<textarea class="messages" name="message" placeholder="Your Message"></textarea>
-				</div>
-
-				<div class="contact-btn">
+                </th>
+                </tr>
+                <tr>
+				<th colspan="2" class="contact-btn">
 					<button class="contact-form-btn">
 						SEND
 					</button>
-				</div>
+                </th>
+                </tr>
+            </table>
 			</form>
         </div>
     </div>

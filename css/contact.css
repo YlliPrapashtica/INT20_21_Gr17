@@ -19,12 +19,13 @@
     font-family: inherit;
     padding-left: 15px;
     padding-right: 100px;
+    
     font-size: 14px;
     background: #ffffff;
     padding-top: 119px;
     padding-bottom: 105px;
     position: relative;
-    width: 100%
+    width: 100%;
 }
 .title{
     text-align: left;
@@ -50,7 +51,7 @@
 }
 li{
     color: #3f6fce;
-    margin-block-start: 1em;
+    margin-block-start: 2em;
     list-style-type: none;
 }
 .input{
@@ -72,6 +73,7 @@ li{
     background: linear-gradient(to right,#487fee,#32fa95);
     text-align: center;
     border-radius: 36px;
+    float: left;
 }
 .messages{
     height: 153px;
