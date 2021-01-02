@@ -76,6 +76,121 @@
         </form>
         </div>
         </div> -->
+    <div class="home">
+        <div class="home-container">
+            <div class="contain">
+                <div class="contain-row">
+                    <div class="contain-col">
+                        <div class="home-content">
+            <div class="home-title">
+                Contact
+            </div>
+
+            <div class="homecontact">
+                <div class="hclists">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <style>
+        .home{
+            background-image: url("img/ArcDeTriomphe.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+        .home-title{
+            font-weight: 600;
+            color: #FFFFFF;
+            line-height: 0.75;
+            font-size: 48px;
+        }
+        .home-container{
+            position: absolute;
+            left: 0;
+            bottom: 173px;
+            width: 100%;
+        }
+        .contain{
+            max-width: 540px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .contain-row{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .contain-col{
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .home-content{
+            position: relative;
+            align-items: flex-end;
+            justify-content: flex-start;
+            flex-direction: row;
+            display: flex;
+        }
+        .homecontact{
+            margin-left: auto;
+        }
+        .hclists ul
+            {
+                line-height: 0.75;
+            }
+        .hclists ul li
+        {
+            display: inline-block;
+            position: relative;
+            font-size: 12px;
+            font-weight: 500;
+            color: #FFFFFF;
+            line-height: 0.75;
+        }
+        .hclists ul li:not(:last-child)::after
+        {
+            display: inline-block;
+            content: '/';
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+        .hclists ul li a
+        {
+            font-size: 12px;
+            font-weight: 500;
+            color: #FFFFFF;
+            line-height: 0.75;
+            transition: all 200ms ease;
+        }
+        .hclists ul li a:hover
+        {
+            color: rgb(4, 4, 68);
+        }
+    </style>
 
 
     <div class="contacts">
