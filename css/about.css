@@ -1,10 +1,4 @@
 
-
-
-#header{
-	position: relative;
-	width: 100%;
-}
 .First-image {
   position: absolute;
   bottom: 20%;
@@ -37,11 +31,7 @@ font-size: 100px;
 
 
 
-.header {
 
-  text-align: center;
-  padding: 32px;
-}
 
 .row {
   display: -ms-flexbox;
@@ -126,14 +116,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 ol {
   background: #cce5ff;;
   padding: 20px;
-  cursor:pointer;
+  
 }
 
 ul {
   
   background: #cce5ff;
   padding: 20px;
-  cursor:pointer;
+ 
 }
 
 ol li {
@@ -145,4 +135,20 @@ ol li {
 ul li {
   background: #3399ff;
   margin: 5px;
+  cursor:pointer;
+}
+#divA {
+  width: 350px;
+  height: 245px;
+  margin: 10px;
+  padding: 0px;
+  
+}
+#divB {
+  width: 350px;
+  height: 245px;
+  margin: 10px;
+  padding: 0px;
+  border: 2px ridge #03540b;
+  
 }
