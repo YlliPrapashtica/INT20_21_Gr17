@@ -114,16 +114,20 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 ol {
-  background: #cce5ff;;
+ 
   padding: 20px;
   
 }
 
 ul {
   
-  background: #cce5ff;
+  
   padding: 20px;
  
+}
+dl {
+ 
+  padding: 20px;
 }
 
 ol li {
@@ -133,10 +137,24 @@ ol li {
 }
 
 ul li {
+  list-style: square inside;
   background: #3399ff;
   margin: 5px;
   cursor:pointer;
 }
+dl dt {
+  background: #3399ff;
+  margin: 5px;
+  padding-left: 10px;
+  cursor:pointer;
+}
+dl dd {
+  background: #3399ff;
+  
+  cursor:pointer;
+}
+
+
 #divA {
   width: 350px;
   height: 245px;
