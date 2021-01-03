@@ -84,7 +84,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   color: white; 
   cursor: pointer; 
   padding: 15px; 
-  border-radius: 10px; 
+  border-radius: 15px; 
   font-size: 18px; 
   background-color: #4455FF;
   animation-name: button1;
@@ -184,8 +184,8 @@ dl dd {
   width: 500px;
   padding: 10px;
   margin-left: 10%;
-  outline-style: outset;
-  outline-color: gray;
+  outline-style: inset;
+  outline-color: lightgray;
   outline-width: thick;
 
 }
@@ -193,8 +193,23 @@ dl dd {
   width: 500px;
   padding-left: 35px;
   margin-left: 32%;
-  outline-style: inset;
-  outline-color: white;
+  outline-style: outset;
+  outline-color: lightgray;
   outline-width: 5px;
 
+}
+.outofcontent {
+  margin: 0;
+  padding: 3px;
+  background-color: #4455FF;
+}
+
+ .inside {
+  margin: 10px;
+  padding: 5px;
+  
+}
+  p {
+  margin: 2px;
+  font-size: 100%;
 }
