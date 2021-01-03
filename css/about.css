@@ -170,21 +170,31 @@ dl dd {
   border: 2px ridge #03540b;
   
 }
+
 #boxmodel2 {
   width: 500px;
   padding: 10px;
-  border: 5px double gray;
-  margin-right: 20px;
+  margin-left: 10%;
+  outline-style: solid;
+  outline-color: gray;
+  outline-width: thick;
+
 }
 #boxmodel {
   width: 500px;
   padding: 10px;
-  border: 5px outset gray;
   margin-left: 10%;
+  outline-style: outset;
+  outline-color: gray;
+  outline-width: thick;
+
 }
 #boxmodel1 {
   width: 500px;
-  padding: 10px;
-  border: 5px inset gray;
+  padding-left: 35px;
   margin-left: 32%;
+  outline-style: inset;
+  outline-color: white;
+  outline-width: 5px;
+
 }
