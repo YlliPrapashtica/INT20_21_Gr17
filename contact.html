@@ -25,57 +25,7 @@
             <a href="tel:+38349642136"> Call us at +38349642136 </a>
         </div>
     </div>
-    <!-- <div class="search-container">
-        <div class="content">
-        <form action="#" class="search_form">
-        <div class="search_form_content">
-        <div>
-        <select class="search-form">
-        <option disabled="" selected="">For rent</option>
-        <option>Yes</option>
-        <option>No</option>
-        </select>
-        </div>
-        <div>
-        <select class="search-form">
-        <option disabled="" selected="">All types</option>
-        <option>Type 1</option>
-        <option>Type 2</option>
-        <option>Type 3</option>
-        <option>Type 4</option>
-        </select>
-        </div>
-        <div>
-        <select class="search-form">
-        <option disabled="" selected="">City</option>
-        <option>New York</option>
-        <option>Paris</option>
-        <option>Tokyo</option>
-        <option>Rome</option>
-        </select>
-        </div>
-        <div>
-        <select class="search-form">
-        <option disabled="" selected="">Bedrooms</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        </select>
-        </div>
-        <div>
-        <select class="search-form">
-        <option disabled="" selected="">Bathrooms</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        </select>
-        </div>
-        </div>
-        <button class="search-form-button">SEARCH</button>
-        </form>
-        </div>
-        </div> -->
+
     <div class="home">
         <div class="home-container">
             <div class="contain">
@@ -191,7 +141,57 @@
             color: rgb(4, 4, 68);
         }
     </style>
-
+    <!-- <div class="search-container">
+        <div class="content">
+        <form action="#" class="search_form">
+        <div class="search_form_content">
+        <div>
+        <select class="search-form">
+        <option disabled="" selected="">For rent</option>
+        <option>Yes</option>
+        <option>No</option>
+        </select>
+        </div>
+        <div>
+        <select class="search-form">
+        <option disabled="" selected="">All types</option>
+        <option>Type 1</option>
+        <option>Type 2</option>
+        <option>Type 3</option>
+        <option>Type 4</option>
+        </select>
+        </div>
+        <div>
+        <select class="search-form">
+        <option disabled="" selected="">City</option>
+        <option>New York</option>
+        <option>Paris</option>
+        <option>Tokyo</option>
+        <option>Rome</option>
+        </select>
+        </div>
+        <div>
+        <select class="search-form">
+        <option disabled="" selected="">Bedrooms</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        </select>
+        </div>
+        <div>
+        <select class="search-form">
+        <option disabled="" selected="">Bathrooms</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        </select>
+        </div>
+        </div>
+        <button class="search-form-button">SEARCH</button>
+        </form>
+        </div>
+        </div> -->
 
     <div class="contacts">
         <div class="contact-info">
@@ -240,24 +240,24 @@
                 <table cellpadding="5">
 				<tr>
 				<td class="wrap-input" style="padding-right: 65px;">
-					<input class="input" type="text" id="name" placeholder="Full Name">
+					<input class="input" type="text" id="name" placeholder="Full Name" required="required">
 					<span class="focus-input"></span>
                 </td>
 
 				<td class="wrap-input">
-					<input class="input" type="text" name="email" placeholder="E-mail">
+					<input class="input" type="text" name="email" placeholder="E-mail" required="required">
 					<span class="focus-input"></span>
                 </td>
                 </tr>
                 <tr>
 				<td colspan="2" class="wrap-input">
-					<input class="input" type="text" name="subject" placeholder="Subject">
+					<input class="input" type="text" name="subject" placeholder="Subject" required="required">
 					<span class="focus-input"></span>
                 </td>
                 </tr>
                 <tr>
 				<th colspan="2" class="wrap-input">
-					<textarea class="messages" name="message" placeholder="Your Message"></textarea>
+					<textarea class="messages" name="message" placeholder="Your Message" required="required"></textarea>
                 </th>
                 </tr>
                 <tr>
@@ -278,6 +278,46 @@
     <div id="embedMap" style="width: 100%; height: 500px;">
     </div>
 </div>
+
+<div class="newsletter">
+    <div class="p-background"></div>
+    <div class="sub-contain">
+    <div class="sub-row">
+    <div class="sub-col">
+    <div class=" d-flex flex-lg-row align-items-start justify-content-start">
+    <div class="newsletter_title_container">
+    <div class="newsletter_title">Are you buying or selling?</div>
+    <div class="newsletter_subtitle">Search your dream home</div>
+    </div>
+    <div class="newsletter_form_container">
+    <form action="#" class="newsletter_form">
+    <input type="email" class="newsletter_input" placeholder="      Your e-mail address" required="required">
+    <button class="newsletter_btn">subscribe now</button>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <style>
+         .newsletter{
+            background-image: url("img/house.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            width: 100%;
+            padding-top: 107px;
+            padding-bottom: 105px;
+            position: relative;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+    </style>
+
 <script>
         function colorname() {
             return '#' + Math.floor(Math.random() * 0xFFFFFF << 0).toString(16);
