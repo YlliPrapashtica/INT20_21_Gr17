@@ -1,10 +1,4 @@
 
-
-
-#header{
-	position: relative;
-	width: 100%;
-}
 .First-image {
   position: absolute;
   bottom: 20%;
@@ -37,11 +31,7 @@ font-size: 100px;
 
 
 
-.header {
 
-  text-align: center;
-  padding: 32px;
-}
 
 .row {
   display: -ms-flexbox;
@@ -124,16 +114,20 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 ol {
-  background: #cce5ff;;
+ 
   padding: 20px;
-  cursor:pointer;
+  
 }
 
 ul {
   
-  background: #cce5ff;
+  
   padding: 20px;
-  cursor:pointer;
+ 
+}
+dl {
+ 
+  padding: 20px;
 }
 
 ol li {
@@ -143,6 +137,64 @@ ol li {
 }
 
 ul li {
+  list-style: square inside;
   background: #3399ff;
   margin: 5px;
+  cursor:pointer;
+}
+dl dt {
+  background: #3399ff;
+  margin: 5px;
+  padding-left: 10px;
+  cursor:pointer;
+}
+dl dd {
+  background: #3399ff;
+  
+  cursor:pointer;
+}
+
+
+#divA {
+  width: 350px;
+  height: 245px;
+  margin: 10px;
+  padding: 0px;
+  
+}
+#divB {
+  width: 350px;
+  height: 245px;
+  margin: 10px;
+  padding: 0px;
+  border: 2px ridge #03540b;
+  
+}
+
+#boxmodel2 {
+  width: 500px;
+  padding: 10px;
+  margin-left: 10%;
+  outline-style: solid;
+  outline-color: gray;
+  outline-width: thick;
+
+}
+#boxmodel {
+  width: 500px;
+  padding: 10px;
+  margin-left: 10%;
+  outline-style: outset;
+  outline-color: gray;
+  outline-width: thick;
+
+}
+#boxmodel1 {
+  width: 500px;
+  padding-left: 35px;
+  margin-left: 32%;
+  outline-style: inset;
+  outline-color: white;
+  outline-width: 5px;
+
 }

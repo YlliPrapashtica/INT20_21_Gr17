@@ -11,7 +11,7 @@
 </head>
 <body>
 	<button onclick="topFunction()" id="TOPButton" title="Go to top">Top of the page</button>
-	<div style="background-image: url(img/about.jpg); ">
+	<div style="background-image: url(img/about.jpg);">
 	
    
     <div id="header"> 
@@ -49,15 +49,15 @@
         </td>
         <td>
         
-           <p  style="text-align: center; font-size: 45px; color: black;"><b>Hello City We are<br> leader in <span style="color: rgb(255,255, 255);">proparties.</span></b></p>
+           <p id="boxmodel2" style="text-align: center; font-size: 45px; color: black;"><b>Hello City We are<br> leader in <span style="color: rgb(255,255, 255);">proparties.</span></b></p>
            <p style="text-align: right; color: white;font-family:monospace; text-shadow: 2px 2px 8px #000000; font-size: 20px;"><b> With a staff of over 50 employees, with a high  potential, which thanks to the dedication, professionalism and extremely high working capacity, correctness and competitive prices has managed to rise to the pedestal of a leader in its scope.<br>Many years of experience is the backbone of our ability.  </p>
         </td>
     </tr>
     <tr>
         <td>
         
-            <p id="right" style=" text-align: center; font-size: 45px; color: black;"><b>Hello City We are<br> leader in <span style="color: rgb(255,255, 255);">ideas.</span></b></p>
-            <p style="text-align: right; color: white;font-family:monospace; text-shadow: 2px 2px 8px #000000; font-size: 20px;"><b>Our strongest point is attractive ideas,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,<br>in gravida nulla. Curab itur ornare nisl at sagittis cursus.</p>
+            <p id="boxmodel" style=" text-align: center; font-size: 45px; color: black;"><b>Hello City We are<br> leader in <span style="color: rgb(255,255, 255);">ideas.</span></b></p>
+            <p style="text-align: right; color: white;font-family:monospace; text-shadow: 2px 2px 8px #000000; font-size: 20px;"><b><br>Our strongest point is attractive ideas,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,<br>in gravida nulla. Curab itur ornare nisl at sagittis cursus.</p>
         </td>
     
         <td>
@@ -70,7 +70,7 @@
       
     </table>
     <div class="header">
-  <h1>Hello City We are leader <span style="color: rgb(255,255,255);">in Projects.</span></h1>
+  <h1 id="boxmodel1">Hello City We are leader <span style="color: rgb(255,255,0);">in Projects.</span></h1>
 </div>
     <div class="row"> 
   <div class="column">
@@ -88,17 +88,19 @@
    
   </div>  
   <div class="column">
-    <img src="img/3.jpg" alt="Exterior" title="Exterior">
-    <img src="img/6.jpg" alt="Interior" title="Interior">
-    
+    <div id="divA" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="img/6.jpg" draggable="true" ondragstart="drag(event)" id="drag1">
+</div>
+
+<div id="divB" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
    
     </div>
     
 </div>
 <div style="max-width: 100%; padding-left: 12%">   
-            <button id="TOPButton1" onclick="document.getElementById('img').src='img/1.jpg'"><b>Go to photo</b> (1)</button>
+            <button id="TOPButton1" onclick="document.getElementById('img').src='img/1.jpg'"><b>Go to photo</b>  (1)</button>
 
-             <img id="img" src="img/1.jpg" style="width:600px; height: 400px">
+             <img id="img" src="img/1.jpg" style="width:600px; height: 400px" >
 
             <button id="TOPButton1" onclick="document.getElementById('img').src='img/4.jpg'"><b>Back to photo </b>(2) </button>
         </div>
@@ -114,6 +116,29 @@
             <li>Panama</li>
             <li>Costa Rica</li>
         </ol>
+        <a style="padding-left: 17px;"><b>What We sell ?</b></a>
+
+<dl>
+  <dd>Apartments</dd>
+  <dt>High quality constructions</dt>
+  <dd>Houses</dd>
+  <dt>Quality house with gardens</dt>
+</dl>
+        <ol>
+        	<a><b>Which European cities invest in real estate?</b></a>
+            <li>France</li>
+            <ol>
+            	<li>Paris</li>
+            	<li>Lion</li>
+            </ol>
+            <li>Germany</li>
+            <ol>
+            	<li>Berlin</li>
+            	<li>Hamburg</li>
+            </ol>
+           </ol>
+        </ol>
+
 
 
 
@@ -201,5 +226,18 @@
  
      document.documentElement.scrollTop = 0; 
      }
+     function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
    </script>
 </html>
