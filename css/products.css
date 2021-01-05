@@ -102,6 +102,7 @@ div.heroText{
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
+    column-count: 3;
 }
 
 .pagination-row{
