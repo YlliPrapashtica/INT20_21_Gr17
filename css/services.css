@@ -56,23 +56,6 @@ body {
     font-size: 3rem;
 }
 
-.content p {
-    color: #656d78;
-    margin-top: 30px;
-    margin-bottom: 80px;
-    max-width: 500px;
-    font-size: 1.2rem;
-}
-
-.content a {
-    background-color: #35587b;
-    color: #ffffff;
-    font-size: 1.3rem;
-    padding: 10px 35px;
-    text-decoration: none;
-    position: absolute;
-}
-
 .wrapper {
     overflow: hidden;
 }
