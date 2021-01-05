@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="/realestate.appcache">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -357,7 +357,7 @@
                 <a href="services.html" class="menu-page"> Services </a>
                 <a href="addProperty.html" class="menu-page "> Add a Property </a>
                 <a href="contact.html" class="menu-page"> Contact Us </a>
-                <a href="login.html">Login</a>
+                <a href="login.html" id="loginLink" >Login</a>
 
         </div>
     
@@ -368,6 +368,15 @@
 <script>
 var imageIndex=1;
 imageSlider(imageIndex);
+
+check_login();
+
+function check_login(){
+    let logged_in=sessionStorage.getItem('logged_in');
+    if(logged_in){
+        document.getElementById('loginLink').innerText=sessionStorage.getItem('email');
+    }
+}
 
 function nextSlide(n){
     imageSlider(imageIndex+=n);
