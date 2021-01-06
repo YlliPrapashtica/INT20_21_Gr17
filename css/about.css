@@ -213,3 +213,27 @@ dl dd {
   margin: 2px;
   font-size: 100%;
 }
+div.position {
+  position: absolute;
+  
+  left:40%;
+  width: 260px;
+  height: 135px;
+  border: 4px dashed #888888;
+}
+div.position1 {
+  position: absolute;
+  
+  left:10%;
+  width: 260px;
+  height: 135px;
+  border: 4px dotted #000000;
+}
+div.position2 {
+  position: absolute;
+  
+  left:70%;
+  width: 260px;
+  height: 135px;
+  border: 4px solid #FFFFFF;
+}
