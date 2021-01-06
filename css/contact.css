@@ -136,7 +136,7 @@ li{
    display: block;
 }
 @media screen and (min-width: 992px){
-    .flex-lg-row{
+    .flex-row{
         flex-direction: row;
     }
     .align-items-start{
@@ -174,7 +174,7 @@ li{
     display: block;
     position: relative;
     width: 100%;
-    
+
 }
 .newsletter_input{
     height: 52px;
@@ -183,7 +183,6 @@ li{
     background: #ffffff;
     border: none;
     outline: none;
-    /* padding-left: 45px; */
 }
 .newsletter_btn{
     width: 173px;
@@ -200,4 +199,104 @@ li{
     cursor: pointer;
     text-transform: uppercase;
     background: linear-gradient(to right, #487fee, #32fa95);
+}
+
+.home-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 0.75;
+}
+@media screen and (max-width: 991px){
+.home-title {
+    font-size: 48px;
+}}
+.home-container{
+    position: absolute;
+    left: 0;
+    bottom: 173px;
+    width: 100%;
+}
+.contain{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media screen and (min-width: 1200px){
+.container {
+    max-width: 1170px;
+}}
+.contain-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.contain-col{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 90px;
+    padding-left: 50px;
+}
+/* .home-content{
+    position: relative;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+    display: flex;
+} */
+@media screen and (min-width: 992px){
+.flex-row{
+    flex-direction: row;
+}
+.align-items-end{
+    align-items: flex-end;
+}
+.justify-content-start{
+    justify-content: flex-start
+}
+.d-flex{
+    display: flex;
+}
+}
+.homecontact{
+    margin-left: auto;
+}
+.hclists ul
+    {
+        line-height: 0.75;
+    }
+.hclists ul li
+{
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 0.75;
+}
+.hclists ul li:not(:last-child)::after
+{
+    display: inline-block;
+    content: '/';
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.hclists ul li a
+{
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 0.75;
+    transition: all 200ms ease;
+}
+.hclists ul li a:hover
+{
+    color: rgb(4, 4, 68);
 }
