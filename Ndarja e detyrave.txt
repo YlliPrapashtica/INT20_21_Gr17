@@ -1,6 +1,6 @@
 1. Homepage    Ylli / Petriti
 2. Ndertesat  Petriti /done
-3. Services   Vesa
+3. Services   Vesa/done
 4. Na kontaktoni Gresa
 5. Rreth nesh.   Endriti
 6. Add Property   Ylli   -- Vet dizajn
@@ -17,7 +17,12 @@ Petriti=tjerat
 ---------------------------------
 
 Luta - 2/done,9/done ,19/done ,20/done ,22/done
-Ylli -3 ,10 , 23,21
+Ylli -3 /done,10/done , 23/done,21
 Gresa - 5 ,11,12,13
 Vesa - 8 16,17
 Endrit- 6 ,14 ,15,18
+
+
+Ekstra*****
+Petriti: css grid/done,video file,komplet t yllit/done
+Gresa:background change with time

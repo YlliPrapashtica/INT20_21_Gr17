@@ -102,6 +102,7 @@ div.heroText{
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
+    column-count: 3;
 }
 
 .pagination-row{
@@ -268,7 +269,19 @@ div.heroText{
         flex-direction: column;
         justify-content: center;
     }
-  } 
+   
+  }
+  
+@media screen and (max-width:500px){
+    .pagination-row{
+       display: grid;
+       justify-content: space-between;
+        
+    }
+    .pagination{
+        margin-top: 20px;
+    }
+}
 
 
   @media screen and (max-width: 1400px)  and (min-width: 865px) {
