@@ -248,5 +248,12 @@ div.position4 {
   left:14.5%;
   width: 260px;
   height: 142px;
-  border: 4px double #BBBBBB;
+  border: 4px inset #BBBBBB;
+}
+div.position5 {
+  position: absolute;
+  left:64.5%;
+  width: 260px;
+  height: 142px;
+  border: 4px outset #BBBBBB;
 }
