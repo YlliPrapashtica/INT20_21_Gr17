@@ -215,25 +215,38 @@ dl dd {
 }
 div.position {
   position: absolute;
-  
-  left:40%;
+  left:19.5%;
   width: 260px;
   height: 135px;
   border: 4px dashed #888888;
 }
 div.position1 {
   position: absolute;
-  
-  left:10%;
+  left:0%;
   width: 260px;
   height: 135px;
   border: 4px dotted #000000;
 }
 div.position2 {
   position: absolute;
-  
-  left:70%;
+  left:39%;
   width: 280px;
   height: 135px;
   border: 4px solid #FFFFFF;
+}
+
+div.position3 {
+  position: absolute;
+  left:60%;
+  width: 260px;
+  height: 135px;
+  border: 4px none #BBBBBB;
+  background-color: red;
+}
+div.position4 {
+  position: absolute;
+  left:80%;
+  width: 260px;
+  height: 135px;
+  border: 4px none #BBBBBB;
 }

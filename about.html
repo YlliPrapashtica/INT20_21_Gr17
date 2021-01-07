@@ -201,7 +201,16 @@
   <input type="submit">
 </form>
 </div>
+<div class="position3">
+	<canvas id="CanvasText">
+</canvas>
+</div>
+<div class="position4">
+	<canvas id="CanvGradienti">
+</canvas>
+</div>
 <br><br><br><br>
+
       
 
   <div id="footer">
@@ -307,5 +316,23 @@ function drop(ev) {
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
+//CanvasText
+var canvas = document.getElementById("CanvasText");
+var cnv = canvas.getContext("2d");
+cnv.font = "30px red cursive ";
+cnv.fillText("Canvas Text",-12,25);
+//Canvasi ne drejtekendesh
+var cv = document.getElementById("CanvGradienti");
+var cnvs = cv.getContext("2d");
+
+
+var grad = cnvs.createRadialGradient(75,50,5,90,60,100);
+grad.addColorStop(0,"white");
+grad.addColorStop(0.5,"blue");
+grad.addColorStop(1,"black");
+
+
+cnvs.fillStyle = grad;
+cnvs.fillRect(0,0,253,135);
    </script>
 </html>
