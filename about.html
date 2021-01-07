@@ -205,12 +205,13 @@
 	<canvas id="CanvasText">
 </canvas>
 </div>
+<br><br><br><br><br><br><br>
+
 <div class="position4">
 	<canvas id="CanvGradienti">
 </canvas>
 </div>
-<br><br><br><br>
-
+<br><br><br><br><br>
       
 
   <div id="footer">
@@ -316,12 +317,13 @@ function drop(ev) {
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
-//CanvasText
+
 var canvas = document.getElementById("CanvasText");
 var cnv = canvas.getContext("2d");
 cnv.font = "30px red cursive ";
 cnv.fillText("Canvas Text",-12,25);
-//Canvasi ne drejtekendesh
+//Canvasi radial
+
 var cv = document.getElementById("CanvGradienti");
 var cnvs = cv.getContext("2d");
 
@@ -334,5 +336,17 @@ grad.addColorStop(1,"black");
 
 cnvs.fillStyle = grad;
 cnvs.fillRect(0,0,253,135);
+
+//Canvasi linear
+var c1 = document.getElementById("CanvasRectangle");
+var cv1 = c1.getContext("2d");
+
+var grd = cv1.createLinearGradient(0,0,200,30);
+grd.addColorStop(0,"white");
+grd.addColorStop(0.5,"blue");
+grd.addColorStop(1,"black");
+
+cv1.fillStyle = grd;
+cv1.fillRect(0,0,253,135);
    </script>
 </html>
