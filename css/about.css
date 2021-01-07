@@ -232,7 +232,7 @@ div.position2 {
   left:50.5%;
   width: 280px;
   height: 135px;
-  border: 4px solid #FFFFFF;
+  border: 4px solid #AAAAAA;
 }
 
 div.position3 {
@@ -241,7 +241,7 @@ div.position3 {
   width: 260px;
   height: 135px;
   border: 4px none #BBBBBB;
-  background-color: red;
+  background-color: #2331FF;
 }
 div.position4 {
   position: absolute;
