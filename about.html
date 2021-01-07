@@ -170,10 +170,11 @@
            </ol>
         </ol>
         <div class="position">
-	<h2 style="font-size: 25px; padding-left: 36%">Review</h2>
-<form style=" font-size: 35px; padding-left: 4%" oninput="x.value=parseInt(a.value)">0
-<input type="range" id="a" value="50">100<br>
-<output style="font-size: 40px; color: red; padding-left: 40%" name="x" for="a"></output>
+	<h2 style="font-size: 20px; padding-left: 36%"><h2>The output element</h2>
+</h2>
+<form style=" font-size: 18px; padding-left: 4%" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50">
++<input type="number" id="b" value="25">=<output style="font-size: 25px; color: red;" name="x" for="a b"></output>
 </form>
 </div>
 <div class="position1">
@@ -184,10 +185,7 @@
   <input list="browsers" name="browser" id="browser">
   <datalist id="browsers">
     <option value="Edge">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
+    
   </datalist>
   <input type="submit">
 </form>
