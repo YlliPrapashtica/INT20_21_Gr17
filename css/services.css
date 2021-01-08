@@ -134,5 +134,5 @@ body {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    border-image: url(blackborder.png) 90%;
+    border-image: url(img/Services/blackborder.png) 90%;
 }
