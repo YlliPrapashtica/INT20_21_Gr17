@@ -9,8 +9,8 @@
     <title>Document</title>
     
 </head>
-<body>
-	<button onclick="topFunction()" id="TOPButton" title="Go to top">Top of the page</button>
+<body bgcolor="#2c8dff" >
+	
 		
    
     <div id="header"> 
@@ -72,7 +72,7 @@
         
            <p id="boxmodel2" style="text-align: center; font-size: 45px; color: black;"><b>Hello City We are<br> leader in <span style="color: rgb(255,255, 255);">proparties.</span></b></p>
          
-           <p style="text-align: right; color: white;font-family:monospace; text-shadow: 2px 2px 8px #000000; font-size: 20px;"><b><br>Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,in gravida nulla. Curab itur ornare nisl at sagittis cursus. </p>
+           <p style="text-align: right; color: white;font-family:monospace; text-shadow: 8px 8px 8px #000000; font-size: 20px;"><b><br>Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,in gravida nulla. Curab itur ornare nisl at sagittis cursus. </p>
 
         </td>
     </tr>
@@ -81,7 +81,7 @@
         
             <p id="boxmodel" style=" text-align: center; font-size: 45px; color: black;"><b>Hello City We are<br> leader in <span style="color: rgb(255,255, 255);">ideas.</span></b></p>
             
-            <p style="text-align: right; color: white;font-family:monospace; text-shadow: 2px 2px 8px #000000; font-size: 20px;"><b><br>Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,in gravida nulla.</p>
+            <p style="text-align: right; color: white;font-family:monospace; text-shadow: 8px 8px 8px #000000; font-size: 20px;"><b><br>Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,in gravida nulla.</p>
         </td>
     
         <td>
@@ -130,11 +130,11 @@
     
 </div>
 <div style="max-width: 100%; padding-left: 12%">   
-            <button id="TOPButton1" onclick="document.getElementById('img').src='img/1.jpg'"><b>Back to photo</b>  (2)</button>
+            <button id="TOPButton1" onclick="document.getElementById('img').src='img/1.jpg'" style="color: white"><b>Back to photo</b>  (2)</button>
              
              <img id="img" src="img/1.jpg" style="width:600px; height: 400px" >
 
-            <button id="TOPButton1" onclick="document.getElementById('img').src='img/4.jpg'"><b>Go to photo </b>(1) </button>
+            <button id="TOPButton1" onclick="document.getElementById('img').src='img/4.jpg'" style="color:white"><b>Go to photo </b>(1) </button>
         </div>
         <ul>
 	       <a><b>Places we involve:</b> </a>
@@ -290,23 +290,7 @@
   </body>
   <script>
 	
-  mybutton = document.getElementById("TOPButton");
-
-
-  window.onscroll = function() {scrollFunction()};
-
-  function scrollFunction() {
-     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-     mybutton.style.display = "block";
-     } else {
-     mybutton.style.display = "none";
-     }
-     }
-
-  function topFunction() {
  
-     document.documentElement.scrollTop = 0; 
-     }
      function allowDrop(ev) {
   ev.preventDefault();
 }
