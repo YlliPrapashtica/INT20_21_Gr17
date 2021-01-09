@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,10 +9,9 @@
     <title>Document</title>
     
 </head>
-<body>
+<body bgcolor="#2c8dff" >
 	<button onclick="topFunction()" id="TOPButton" title="Go to top">Top of the page</button>
-	<div style="background-image: url(img/about.jpg);">
-	
+		
    
     <div id="header"> 
         <div class="logo-container"> <img class="logo" src="img/logo.png" alt=""></div>
@@ -30,16 +29,19 @@
         </div>
     </div>
     
-
-    <div class="mainImage">
-        
-        <div style="max-width: 100%;height: 450px;"></div>
-        <div class="First-image">
-    <a class="row">Dream <br> </a>
-    <a class="row2">Proparties <br>Now In City</a>
-  
 </div>
-    </div>
+        
+        
+          <div>
+          	<img id="Firstimage" src="img/about.jpg" style="max-width: 100%">
+          	<div class="Firstimagetxt">
+
+            <h1>Dream</h1><br>
+            <p>Proparties Now In City</p><br>
+            </div>
+        </div>
+    
+
     <svg width="320" height="250">
     	<circle cx="180" cy="120" r="48" stroke="blue"
     	stroke-width="50" fill="lightblue"></circle>
@@ -59,19 +61,18 @@
     	</circle>
     </svg>
     
-
-    <table class="tabela1">
+<table class="tabela1">
     <tr>
         <td>
           <div class="about_img" style="padding-top: 20px; padding-left: 20px;">
-          <img src="img/aboutbuilding.jpg" border="2px"  title="Buildings" align="left" width="604.5px;" height="432px;">
+          <img src="img/aboutbuilding.jpg" border="2px"  title="Buildings" align="left" width="604.5px" height="432px">
           </div>
         </td>
         <td>
         
            <p id="boxmodel2" style="text-align: center; font-size: 45px; color: black;"><b>Hello City We are<br> leader in <span style="color: rgb(255,255, 255);">proparties.</span></b></p>
          
-           <p style="text-align: right; color: white;font-family:monospace; text-shadow: 2px 2px 8px #000000; font-size: 20px;"><b><br> With a staff of over 50 employees, with a high  potential, which thanks to the dedication, professionalism and extremely high working capacity, correctness and competitive prices has managed to rise to the pedestal of a leader in its scope.<br>Many years of experience is the backbone of our ability.  </p>
+           <p style="text-align: right; color: white;font-family:monospace; text-shadow: 8px 8px 8px #000000; font-size: 20px;"><b><br>Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,in gravida nulla. Curab itur ornare nisl at sagittis cursus. </p>
 
         </td>
     </tr>
@@ -80,7 +81,7 @@
         
             <p id="boxmodel" style=" text-align: center; font-size: 45px; color: black;"><b>Hello City We are<br> leader in <span style="color: rgb(255,255, 255);">ideas.</span></b></p>
             
-            <p style="text-align: right; color: white;font-family:monospace; text-shadow: 2px 2px 8px #000000; font-size: 20px;"><b><br>Our strongest point is attractive ideas,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,<br>in gravida nulla. Curab itur ornare nisl at sagittis cursus.</p>
+            <p style="text-align: right; color: white;font-family:monospace; text-shadow: 8px 8px 8px #000000; font-size: 20px;"><b><br>Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,in gravida nulla.</p>
         </td>
     
         <td>
@@ -129,11 +130,11 @@
     
 </div>
 <div style="max-width: 100%; padding-left: 12%">   
-            <button id="TOPButton1" onclick="document.getElementById('img').src='img/1.jpg'"><b>Back to photo</b>  (2)</button>
+            <button id="TOPButton1" onclick="document.getElementById('img').src='img/1.jpg'" style="color: white"><b>Back to photo</b>  (2)</button>
              
              <img id="img" src="img/1.jpg" style="width:600px; height: 400px" >
 
-            <button id="TOPButton1" onclick="document.getElementById('img').src='img/4.jpg'"><b>Go to photo </b>(1) </button>
+            <button id="TOPButton1" onclick="document.getElementById('img').src='img/4.jpg'" style="color:white"><b>Go to photo </b>(1) </button>
         </div>
         <ul>
 	       <a><b>Places we involve:</b> </a>
@@ -170,19 +171,24 @@
            </ol>
         </ol>
         <div class="position">
-	<h2 style="font-size: 25px; padding-left: 36%">Review</h2>
-<form style=" font-size: 35px; padding-left: 4%" oninput="x.value=parseInt(a.value)">0
-<input type="range" id="a" value="50">100<br>
-<output style="font-size: 40px; color: red; padding-left: 40%" name="x" for="a"></output>
+	<h2 style="font-size: 20px; padding-left: 36%"><h2>The output element</h2>
+</h2>
+<form style=" font-size: 18px; padding-left: 4%" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50">
++<input type="number" id="b" value="10">=<b><output style="font-size: 25px; color: #2331FF;" name="x" for="a b"></output>
 </form>
 </div>
 <div class="position1">
-<h2 style="font-size: 25px; padding-left: 36%">Review</h2>
-<form style=" font-size: 40px; padding-left: 4%" oninput="x.value=parseInt(b.value)">
+<h2>The datalist element</h2>
 
-<input type="number" id="b" value="25">
-
-<output style="color: red" name="x" for="a b"></output>
+<form  >
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    
+  </datalist>
+  <input type="submit">
 </form>
 </div>
 <div class="position2">
@@ -190,11 +196,25 @@
 <form >
 
   <label for="email">Email:</label>
-  <input type="email" id="email" name="email" autocomplete="on"><br><br>
+  <input type="email" id="email" name="email" autocomplete="on">
   <input type="submit">
 </form>
 </div>
-<br><br><br><br>
+<div class="position3">
+	<canvas id="CanvasText">
+</canvas>
+</div>
+<br><br><br><br><br><br><br>
+
+<div class="position4">
+	<canvas id="CanvGradienti">
+</canvas>
+</div>
+<div class="position5">
+<canvas id="CanvasRectangle">
+</canvas>
+	</div>
+<br><br><br><br><br>
       
 
   <div id="footer">
@@ -287,6 +307,8 @@
  
      document.documentElement.scrollTop = 0; 
      }
+     //
+     
      function allowDrop(ev) {
   ev.preventDefault();
 }
@@ -300,5 +322,36 @@ function drop(ev) {
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
+
+var canvas = document.getElementById("CanvasText");
+var cnv = canvas.getContext("2d");
+cnv.font = "30px red cursive ";
+cnv.fillText("Canvas Text",-12,25);
+//Canvasi radial
+
+var cv = document.getElementById("CanvGradienti");
+var cnvs = cv.getContext("2d");
+
+
+var grad = cnvs.createRadialGradient(75,50,5,90,60,100);
+grad.addColorStop(0,"white");
+grad.addColorStop(0.5,"blue");
+grad.addColorStop(1,"black");
+
+
+cnvs.fillStyle = grad;
+cnvs.fillRect(0,0,253,135);
+
+//Canvasi linear
+var c1 = document.getElementById("CanvasRectangle");
+var cv1 = c1.getContext("2d");
+
+var grd = cv1.createLinearGradient(0,0,200,30);
+grd.addColorStop(0,"white");
+grd.addColorStop(0.5,"blue");
+grd.addColorStop(1,"black");
+
+cv1.fillStyle = grd;
+cv1.fillRect(0,0,253,135);
    </script>
 </html>
