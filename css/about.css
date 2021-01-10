@@ -153,7 +153,6 @@ dl dt {
 }
 dl dd {
   background: #2c769b;
-  
   cursor:pointer;
 }
 
@@ -201,21 +200,10 @@ dl dd {
   outline-width: 5px;
 
 }
-.outofcontent {
-  margin: 0;
-  padding: 3px;
-  background-color: #4455FF;
-}
 
- .inside {
-  margin: 10px;
-  padding: 5px;
-  
-}
-  p {
-  margin: 2px;
-  font-size: 100%;
-}
+
+ 
+ 
 div.position {
   position: absolute;
   left:26.5%;
