@@ -248,3 +248,19 @@ div.position5 {
   height: 142px;
   border: 4px outset #BBBBBB;
 }
+div.position6 {
+  position: absolute;
+  left:40.5%;
+  width: 260px;
+  height: 142px;
+  border: 4px outset;
+}
+.outofcontent {
+  max-width:260px;
+  max-height:142px;
+  padding: 5px;
+  background-color: lightgray;
+}
+.inside {
+  background: white;
+}
