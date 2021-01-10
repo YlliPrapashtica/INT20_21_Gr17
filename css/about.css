@@ -250,15 +250,15 @@ div.position5 {
 }
 div.position6 {
   position: absolute;
-  left:40.5%;
+  left:39.1%;
   width: 260px;
   height: 142px;
-  border: 4px outset;
+  border: 2px outset;
 }
 .outofcontent {
-  max-width:260px;
-  max-height:142px;
-  padding: 5px;
+  width:256px;
+  height:140px;
+  padding: 10px;
   background-color: lightgray;
 }
 .inside {
