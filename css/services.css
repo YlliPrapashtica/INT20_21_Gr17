@@ -137,7 +137,7 @@ body {
     border-image: url(../img/Services/blackborder.png) 90%;
 }
 .bg {
-    min-height: 200px;
+    min-height: 50px;
     max-width: 1200px;
-    background: radial-gradient(#BFD4DB, #AECBD6, #A4C3D2, #96B9D0, #88AED0, #78A2CC);
+    background: radial-gradient(#BFD4DB, #AECBD6, #A4C3D2, #96B9D0, #88AED0, #78A2CC, #434a54);
 }
