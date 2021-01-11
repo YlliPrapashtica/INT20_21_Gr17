@@ -9,7 +9,7 @@
     <title>Document</title>
     
 </head>
-<body>
+<body style="background-image: url(img/background.jpg);">
 	<button onclick="topFunction()" id="TOPButton" title="Go to top">Top of the page</button>
 		
    
@@ -72,7 +72,7 @@
         
            <p id="boxmodel2" style="text-align: center; font-size: 45px; color: black;"><b>Hello City We are<br> leader in <span style="color: rgb(255,255, 255);">proparties.</span></b></p>
          
-           <p style="text-align: right; color: white;font-family:monospace; text-shadow: 2px 2px 8px #000000; font-size: 20px;"><b><br>Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,in gravida nulla. Curab itur ornare nisl at sagittis cursus. </p>
+           <p style="text-align: right; color: white;font-family:monospace; text-shadow: 8px 8px 8px #000000; font-size: 20px;"><b><br>Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,in gravida nulla. Curab itur ornare nisl at sagittis cursus.</b> </p>
 
         </td>
     </tr>
@@ -81,7 +81,7 @@
         
             <p id="boxmodel" style=" text-align: center; font-size: 45px; color: black;"><b>Hello City We are<br> leader in <span style="color: rgb(255,255, 255);">ideas.</span></b></p>
             
-            <p style="text-align: right; color: white;font-family:monospace; text-shadow: 2px 2px 8px #000000; font-size: 20px;"><b><br>Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,in gravida nulla.</p>
+            <p style="text-align: right; color: white;font-family:monospace; text-shadow: 8px 8px 8px #000000; font-size: 20px;"><b><br>Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.,Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim,in gravida nulla.</b></p>
         </td>
     
         <td>
@@ -95,7 +95,7 @@
     </table>
     <div class="header">
     	
-  <h1 id="boxmodel1">Hello City We are leader <span style="color: rgb(255,255,0);">in Projects.</span></h1>
+  <h1 id="boxmodel1">Hello City We are leader <span style="color: rgb(255,255,255);">in Projects.</span></h1>
 </div>
 
     <div class="row"> 
@@ -130,52 +130,64 @@
     
 </div>
 <div style="max-width: 100%; padding-left: 12%">   
-            <button id="TOPButton1" onclick="document.getElementById('img').src='img/1.jpg'"><b>Back to photo</b>  (2)</button>
+            <button id="TOPButton1" onclick="document.getElementById('img').src='img/1.jpg'" style="color: white"><b>Back to photo</b>  (1)</button>
              
              <img id="img" src="img/1.jpg" style="width:600px; height: 400px" >
 
-            <button id="TOPButton1" onclick="document.getElementById('img').src='img/4.jpg'"><b>Go to photo </b>(1) </button>
+            <button id="TOPButton1" onclick="document.getElementById('img').src='img/4.jpg'" style="color:white"><b>Go to photo </b>(2) </button>
         </div>
+        <br><br>
+
+    <div class="ul">
         <ul>
 	       <a><b>Places we involve:</b> </a>
             <li>South America</li>
             <li>North America</li>
             <li>Europe</li>
         </ul>
+    </div>
+    <div class="ol">
         <ol>
         	<a><b>Which countries invest in real estate?</b></a>
             <li>Puerto Rico</li>
             <li>Panama</li>
             <li>Costa Rica</li>
         </ol>
-        <a style="padding-left: 17px;"><b>What We sell ?</b></a>
+    </div>
+    <div class="dl">
+        <a><b>What We sell ?</b></a>
 
-<dl>
-  <dd>Apartments</dd>
-  <dt>High quality constructions</dt>
-  <dd>Houses</dd>
-  <dt>Quality house with gardens</dt>
-</dl>
+    <dl>
+       <dd>Apartments</dd>
+       <dt>High quality constructions</dt>
+       <dd>Houses</dd>
+       <dt>Quality house with gardens</dt>
+    </dl>
+    </div>
+    <div class="ol1">
         <ol>
         	<a><b>Which European cities invest in real estate?</b></a>
             <li>France</li>
             <ol>
             	<li>Paris</li>
-            	<li>Lion</li>
+
             </ol>
             <li>Germany</li>
             <ol>
             	<li>Berlin</li>
-            	<li>Hamburg</li>
             </ol>
            </ol>
         </ol>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <br>
         <div class="position">
 	<h2 style="font-size: 20px; padding-left: 36%"><h2>The output element</h2>
 </h2>
 <form style=" font-size: 18px; padding-left: 4%" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
 <input type="range" id="a" value="50">
-+<input type="number" id="b" value="10">=<b><output style="font-size: 25px; color: #2331FF;" name="x" for="a b"></output>
++<input type="number" id="b" value="10">=<b><output style="font-size: 25px; color: #2331FF;" name="x" for="a b" ></output></b>
 </form>
 </div>
 <div class="position1">
@@ -204,7 +216,7 @@
 	<canvas id="CanvasText">
 </canvas>
 </div>
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
 <div class="position4">
 	<canvas id="CanvGradienti">
@@ -214,25 +226,31 @@
 <canvas id="CanvasRectangle">
 </canvas>
 	</div>
-<br><br><br><br><br>
+	</div>
+<div class="position6">
+	<article class="outofcontent">
+  <h3>The article element </h3>
+  <article class="inside">
+    <h3>Styled with CSS</h3>
+    <p>Google Chrome is a web browser developed by Google, released in 2008.'</p>
+  </article>
+ </article>
+</div>
+<br><br><br><br><br><br><br>
       
 
   <div id="footer">
   <div id="logoText">
       <img src="img/logo.png" alt="" >
-      <article class="outofcontent">
-  
-      	<artcle class="inside">
-      		<h2>This is about footer</h2>
+      
 
          <p> Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.
          </p>
-      </article>
-  </artcle>
+     
 
   </div>
   <div id="footerProperties">
-      <h4 id="footerTitle"> Latest Properties</h4>
+      <h4 id="footerTitle">Latest Properties</h4>
       <div id="footerPropertiesContainer">
           <div class="footerProperty">
               <img class="footerImg" src="img/5.jpg" alt="">
@@ -307,6 +325,8 @@
  
      document.documentElement.scrollTop = 0; 
      }
+     //
+
      function allowDrop(ev) {
   ev.preventDefault();
 }
