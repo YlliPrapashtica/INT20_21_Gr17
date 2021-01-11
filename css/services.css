@@ -77,14 +77,14 @@ body {
 .feature-2,
 .feature-3,
 .feature-4 {
-    border: 15px solid transparent;
     max-width: 250px;
     box-shadow: 0 .2rem 3rem rgba(0, 0, 0,.09);
-    padding: 20px;
+    padding: 10px;
     background-color: #e6e6e6;
     cursor: pointer;
+    border: 15px solid transparent;
     border-image: url(../img/Services/blackborder.png) 90% stretch;
-    border-image-width: 35%;
+    border-image-width: 10%;
 }
 
 .feature-2 {
