@@ -82,6 +82,9 @@ body {
     padding: 20px;
     background-color: #e6e6e6;
     cursor: pointer;
+    border-image: url(../img/Services/blackborder.png) 90%;
+    
+    
 }
 
 .feature-2 {
@@ -122,7 +125,7 @@ body {
     text-align: center;
 }
 
-.border1,
+/*.border1,
 .border2,
 .border3,
 .border4 {
@@ -135,7 +138,7 @@ body {
     position: absolute;
     transform: translate(-50%, -50%);
     border-image: url(../img/Services/blackborder.png) 90%;
-}
+}*/
 .bg {
     min-height: 50px;
     max-width: 1200px;
