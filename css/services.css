@@ -136,3 +136,8 @@ body {
     transform: translate(-50%, -50%);
     border-image: url(../img/Services/blackborder.png) 90%;
 }
+.bg {
+    min-height: 200px;
+    max-width: 200px;
+    background: radial-gradient(transparent, black);
+}
