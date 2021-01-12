@@ -1,8 +1,8 @@
 #loginSection{
-    width: 100%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    display: inline-block;
+    
 }
 #loginForm{
     display: flex;
@@ -11,7 +11,7 @@
     padding: 10px 50px;
 }
 #loginForm input{
-    margin:5px 0;
+    margin:15px 0;
 }
 #loginForm .userRoles{
     display: flex;

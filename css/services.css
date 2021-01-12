@@ -79,9 +79,12 @@ body {
 .feature-4 {
     max-width: 250px;
     box-shadow: 0 .2rem 3rem rgba(0, 0, 0,.09);
-    padding: 20px;
+    padding: 10px;
     background-color: #e6e6e6;
     cursor: pointer;
+    border: 15px solid transparent;
+    border-image: url(../img/Services/blackborder.png) 90% stretch;
+    border-image-width: 10%;
 }
 
 .feature-2 {
@@ -122,17 +125,9 @@ body {
     text-align: center;
 }
 
-.border1,
-.border2,
-.border3,
-.border4 {
-    border: 85px solid black;
-    width: 35%;
-    height: 35%;
-    padding: 15%;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    border-image: url(../img/Services/blackborder.png) 90%;
+
+.bg {
+    min-height: 50px;
+    max-width: 1200px;
+    background: radial-gradient(#BFD4DB, #AECBD6, #A4C3D2, #96B9D0, #88AED0, #78A2CC, #434a54);
 }
