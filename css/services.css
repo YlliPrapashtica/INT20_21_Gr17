@@ -87,6 +87,10 @@ body {
     border-image-width: 10%;
 }
 
+.feature-1 {
+    word-wrap: break-word;
+}
+
 .feature-2 {
     margin-top: 20px;
 }
