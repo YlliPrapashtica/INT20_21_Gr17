@@ -42,7 +42,7 @@
         </div>
     
 
-    <svg width="320" height="250">
+    <svg  width="320" height="250" >
     	<circle cx="180" cy="120" r="48" stroke="blue"
     	stroke-width="50" fill="lightblue"></circle>
     </svg>
@@ -120,11 +120,15 @@
    
   </div>  
   <div class="column">
-    <div id="divA" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div style="font-size: 20px; text-align: center;" id="divA" ondrop="drop(event)" ondragover="allowDrop(event)">
+    	Drag and Drop
   <img src="img/6.jpg" draggable="true" ondragstart="drag(event)" id="drag1">
+ 
 </div>
 
-<div id="divB" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div style="font-size: 20px; text-align: center;" id="divB" ondrop="drop(event)" ondragover="allowDrop(event)">
+	Drag and drop
+</div>
    
     </div>
     
@@ -232,7 +236,7 @@
   <h3>The article element </h3>
   <article class="inside">
     <h3>Styled with CSS</h3>
-    <p>Google Chrome is a web browser developed by Google, released in 2008.'</p>
+    <p>Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis.</p>
   </article>
  </article>
 </div>
@@ -347,9 +351,10 @@ function drop(ev) {
 
 var canvas = document.getElementById("CanvasText");
 var cnv = canvas.getContext("2d");
-cnv.font = "30px red cursive ";
+cnv.font = "30px red cursive";
+cnv.fillStyle="red"
 cnv.fillText("Canvas Text",-12,25);
-//Canvasi radial
+
 
 var cv = document.getElementById("CanvGradienti");
 var cnvs = cv.getContext("2d");
