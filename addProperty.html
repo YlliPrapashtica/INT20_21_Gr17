@@ -237,8 +237,14 @@ var form=document.getElementById('uploadProperty');
         let propertyLocation=document.getElementById('propertyLocation').value;
         let file=document.getElementById('file').value;
 
+        if(!propertyName || !propertyPrice || !propertyLocation || !file){
+            alert('Fill in all fields');
+        }
+        else{
 
-        alert('Prona U Shtua');
+            alert('Prona U Shtua');
+        }
+
     });
         // $('#uploadProperty').on('submit',function(e){
           
