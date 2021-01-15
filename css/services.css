@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'VesaFont';
+    src: url('../fonts/VesasFont-Refular.ttf');
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -59,6 +65,7 @@ body {
 .wrapper {
     overflow: hidden;
 }
+
 
 .features {
     margin-top: 50px;
