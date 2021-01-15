@@ -1,15 +1,16 @@
-@font-face {
-    font-family: 'VesaFont';
-    src: url('../fonts/VesasFont-Refular.ttf');
-}
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+@font-face {
+    src: url(../fonts/VesasFont-Regular.otf) format('opentype');
+    font-family: VesaFont;
+    font-weight: 100;
+}
+
 
 .services-section {
     background: url('../img/Services/bg.jpg');
@@ -102,17 +103,13 @@ body {
     margin-top: 20px;
 }
 
-.feature-4 {
-    margin-top: 20px;
+.paragraph {
+    font-family: VesaFont;
+    font-weight: 100;
 }
 
-.features img {
-    width: 140px;
-    filter: drop-shadow(0 .1rem .2rem rgba(0,0,0,.35));
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
+.feature-4 {
+    margin-top: 20px;
 }
 
 .features h2 {
@@ -129,6 +126,8 @@ body {
     color: #434a54;
     line-height: 1.5;
 }
+
+
 
 .fas {
     color: #35587b;
