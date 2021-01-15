@@ -135,3 +135,7 @@
     width: unset;
     padding: 20px 100px;
 }
+.warning{
+    color: red;
+    display: none;
+}

@@ -50,6 +50,7 @@
     <form id="uploadProperty" method="POST" >
         
         <div class="half">
+            <p class="warning"> * Please Fill Out The Field *</p>
             <div class="formInput" id="imgInput">
                 <label for="imageFile"> Upload Property Image</label>
                 <input type="file" name="imageFile" id="file"  onchange=previewImage();>
@@ -58,18 +59,20 @@
             
         </div>
         <div class="half">
+            <p class="warning"> * Please Fill Out The Field *</p>
             <div class="formInput">
+                
             <input class="input" type="text" id="name" placeholder="Property Name...">
             <span class="focus-input"></span>
             </div>
+            <p class="warning"> * Please Fill Out The Field *</p>
 
             <div class="formInput">
             <input class="input" type="text" name="email" placeholder="Property Location...">
             <span class="focus-input"></span>
             </div>
 
-        
-
+            <p class="warning"> * Please Fill Out The Field *</p>
             <div class="formInput">
             <input class="input" type="text" name="subject" placeholder="Property Price...">
             <span class="focus-input"></span>
@@ -228,13 +231,37 @@
 
             }
         });
-        $('#uploadProperty').on('submit',function(e){
-          
-            e.preventDefault();
-            $(this).hide();
-            $('#succMsg').show();
-        });
+        function Contact(email,subject,msg){
+        this.email=email;
+        this.subject=subject;
+        this.msg=msg;
+        this.sayHello=function(){
+            alert('Faleminderit per regjistrim'+this.email);
+        }
+    }
+     var form=document.getElementById('uploadProperty');
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+        let email=document.getElementById('emailContact').value;
+        let name=document.getElementById('name').value;
+        let subject=document.getElementById('subjectContact').value;
+        let msg=document.getElementById('msgContact').value;
+
+
+        var contact=new Contact(email,name,subject,msg);
+        contact.sayHello();
+
     });
+});
+
+
+        // $('#uploadProperty').on('submit',function(e){
+          
+        //     e.preventDefault();
+        //     $(this).hide();
+        //     $('#succMsg').show();
+        // });
+    // });
    
 </script>
 </html>
