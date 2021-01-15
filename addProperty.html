@@ -50,7 +50,6 @@
     <form id="uploadProperty" method="POST" >
         
         <div class="half">
-            <p class="warning"> * Please Fill Out The Field *</p>
             <div class="formInput" id="imgInput">
                 <label for="imageFile"> Upload Property Image</label>
                 <input type="file" name="imageFile" id="file"  onchange=previewImage();>
@@ -59,22 +58,19 @@
             
         </div>
         <div class="half">
-            <p class="warning"> * Please Fill Out The Field *</p>
             <div class="formInput">
                 
-            <input class="input" type="text" id="name" placeholder="Property Name...">
-            <span class="focus-input"></span>
-            </div>
-            <p class="warning"> * Please Fill Out The Field *</p>
-
-            <div class="formInput">
-            <input class="input" type="text" name="email" placeholder="Property Location...">
+            <input class="input" type="text" id="propertyName" placeholder="Property Name...">
             <span class="focus-input"></span>
             </div>
 
-            <p class="warning"> * Please Fill Out The Field *</p>
             <div class="formInput">
-            <input class="input" type="text" name="subject" placeholder="Property Price...">
+            <input class="input" type="text" name="propertyLocation" placeholder="Property Location...">
+            <span class="focus-input"></span>
+            </div>
+
+            <div class="formInput">
+            <input class="input" type="text" name="propertyPrice" placeholder="Property Price...">
             <span class="focus-input"></span>
             </div>
 
@@ -231,30 +227,19 @@
 
             }
         });
-        function Contact(email,subject,msg){
-        this.email=email;
-        this.subject=subject;
-        this.msg=msg;
-        this.sayHello=function(){
-            alert('Faleminderit per regjistrim'+this.email);
-        }
-    }
-     var form=document.getElementById('uploadProperty');
+       
+
+var form=document.getElementById('uploadProperty');
     form.addEventListener('submit',function(e){
         e.preventDefault();
-        let email=document.getElementById('emailContact').value;
-        let name=document.getElementById('name').value;
-        let subject=document.getElementById('subjectContact').value;
-        let msg=document.getElementById('msgContact').value;
+        let propertyName=document.getElementById('propertyName').value;
+        let propertyPrice=document.getElementById('propertyPrice').value;
+        let propertyLocation=document.getElementById('propertyLocation').value;
+        let file=document.getElementById('file').value;
 
 
-        var contact=new Contact(email,name,subject,msg);
-        contact.sayHello();
-
+        alert('Prona U Shtua');
     });
-});
-
-
         // $('#uploadProperty').on('submit',function(e){
           
         //     e.preventDefault();
@@ -262,6 +247,6 @@
         //     $('#succMsg').show();
         // });
     // });
-   
+});
 </script>
 </html>
