@@ -233,16 +233,18 @@ var form=document.getElementById('uploadProperty');
     form.addEventListener('submit',function(e){
         e.preventDefault();
         let propertyName=document.getElementById('propertyName').value;
-        let propertyPrice=document.getElementById('propertyPrice').value;
+        let propertyPrice=parseInt(document.getElementById('propertyPrice').value);
         let propertyLocation=document.getElementById('propertyLocation').value;
         let file=document.getElementById('file').value;
 
-        if(!propertyName || !propertyPrice || !propertyLocation || !file){
-            alert('Fill in all fields');
+        if(propertyName && propertyPrice && propertyLocation && file  && /^\d+$/g.test(propertyPrice)){
+            alert('Prona U Shtua');
+
         }
         else{
 
-            alert('Prona U Shtua');
+            alert('Fill in all fields and price should be a  number');
+
         }
 
     });
