@@ -133,11 +133,35 @@ body {
     color: #35587b;
     font-size: 80px;
     text-align: center;
+    
+}
+
+.fa-home {
+    transform: rotateX(3.142rad);
+}
+
+.fa-puzzle-piece {
+    transform: rotateY(3.142rad);
+}
+
+.fa-hotel {
+    transform: skewX(0.8deg);
+}
+
+.fa-building {
+    transform: scale(1, 0.99);
+    transform: rotate(-10deg);
 }
 
 
 .bg {
+    outline: 1px dashed black;
+    outline-offset: 3px;
+    border: 1px solid blue;
     min-height: 50px;
     max-width: 1200px;
     background: radial-gradient(#BFD4DB, #AECBD6, #A4C3D2, #96B9D0, #88AED0, #78A2CC, #434a54);
+    resize: both;
+    overflow: auto;
+    margin: 15px;
 }
