@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/addProperty.css">
+    <link rel="stylesheet" href="css/contact.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
     <script src="js/script.js"> </script>
@@ -47,41 +48,40 @@
 
      
     <form id="uploadProperty" method="POST" >
-
-        <div class="formInput">
-            <input class="input" type="text" id="name" placeholder="Full Name">
+        
+        <div class="half">
+            <div class="formInput" id="imgInput">
+                <label for="imageFile"> Upload Property Image</label>
+                <input type="file" name="imageFile" id="file"  onchange=previewImage();>
+                <img id="preview">
+            </div>
+            
+        </div>
+        <div class="half">
+            <div class="formInput">
+            <input class="input" type="text" id="name" placeholder="Property Name...">
             <span class="focus-input"></span>
-        </div>
+            </div>
 
-        <div class="formInput">
-            <input class="input" type="text" name="email" placeholder="E-mail">
+            <div class="formInput">
+            <input class="input" type="text" name="email" placeholder="Property Location...">
             <span class="focus-input"></span>
-        </div>
+            </div>
 
-        <div class="formInput" id="imgInput">
-            <label for="imageFile"> Upload Property Image</label>
-            <input type="file" name="imageFile" id="file"  onchange=previewImage();>
-            <img id="preview">
-        </div>
+        
 
-        <div class="formInput">
-            <input class="input" type="text" name="subject" placeholder="Subject">
+            <div class="formInput">
+            <input class="input" type="text" name="subject" placeholder="Property Price...">
             <span class="focus-input"></span>
-        </div>
+            </div>
 
-        <div class="formInput">
-            <textarea class="messages" name="message" placeholder="Your Message"></textarea>
-        </div>
-
-        <div class="formInput">
+            <div class="formInput">
             <button class="contact-form-btn">
                 SEND
             </button>
+            </div>
         </div>
-        <div class="formInput">
-            <label for="name"></label>
-
-        </div>
+        
 
 
     </form>
