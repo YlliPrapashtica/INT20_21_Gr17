@@ -19,7 +19,7 @@ Petriti=tjerat
 Luta - 2/done,9/done ,19/done ,20/done ,22/done
 Ylli -3 /done,10/done , 23/done,21
 Gresa - 5 ,11,12,13
-Vesa - 8 16,17
+Vesa - 8 16,17, done
 Endrit- 6 ,14 ,15,18
 
 
