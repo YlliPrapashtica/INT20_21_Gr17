@@ -459,3 +459,26 @@ display: flex;
     text-transform: uppercase;
     background: linear-gradient(to right, #487fee, #32fa95);
 }
+.contain{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contain-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.contain-col{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 90px;
+    padding-left: 50px;
+}

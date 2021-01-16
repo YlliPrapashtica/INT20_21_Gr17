@@ -27,6 +27,21 @@
     position: relative;
     width: 100%;
 }
+@media screen and (max-width:991px){
+    .contacts{
+        align-items: flex-end;
+        justify-content: flex-start;
+        flex-direction: column;
+        display: flex;
+    }}
+    .contact-form{
+    
+    }
+    @media screen and (max-width: 991px){
+        .contact-form{
+            padding-left: 180px;
+        }
+    }
 .title{
     text-align: left;
     color: #282828;

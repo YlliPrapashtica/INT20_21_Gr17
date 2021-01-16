@@ -19,7 +19,6 @@
             <a href="addProperty.html" class="menu-page"> Add a Property </a>
             <a href="contact.html" class="menu-page isActive"> Contact Us </a>
     </div>
-
         <div class="contact-us">
            
             <a href="tel:+38349642136"> &#9742;+38349642136 </a>
@@ -521,29 +520,26 @@ function myFunction() {
 			<form class="contact-form" id="contactForm">
                 <table cellpadding="5">
 				<tr>
-				<td class="wrap-input" style="padding-right: 65px; width: 300px;">
+				<td style="padding-right: 65px; width: 300px;">
 					<input class="input" type="text" id="name"  placeholder="Full Name" required="required">
-					<span class="focus-input"></span>
                 </td>
 
-				<td class="wrap-input"  style="width: 300px;">
+				<td style="width: 300px;">
 					<input class="input" type="text" name="email" id="emailContact" placeholder="E-mail" required="required">
-					<span class="focus-input"></span>
                 </td>
                 </tr>
                 <tr>
-				<td colspan="2" class="wrap-input">
+				<td colspan="2">
 					<input class="input" type="text" name="subject" id="subjectContact" placeholder="Subject" required="required">
-					<span class="focus-input"></span>
                 </td>
                 </tr>
                 <tr>
-				<th colspan="2" class="wrap-input">
+				<th colspan="2">
 					<textarea class="messages" name="message" id="msgContact" placeholder="Your Message" required="required"></textarea>
                 </th>
                 </tr>
                 <tr>
-				<th colspan="2" class="contact-btn">
+				<th colspan="2">
 					<button class="contact-form-btn">
 						send
 					</button>
@@ -604,7 +600,6 @@ function myFunction() {
         function colorname() {
             return '#' + Math.floor(Math.random() * 0xFFFFFF << 0).toString(16);
           }
-
           window.onload = function() {
               var everyOneSecond = function() {
                   document.body.style.backgroundColor = colorname();
