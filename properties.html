@@ -143,8 +143,8 @@ function myFunction() {
     <div id="heroBackground">
         <div class="heroText">
             <h1>REAL ESTATE PROS</h1>
-            <p>Shtepia juaj eshte misoni yne</p><br>
-            <button>Regjistrohu</button>
+            <p>Your home is our mission</p><br>
+            <button>Sign up</button>
         </div>
     </div>
 
@@ -235,7 +235,7 @@ function myFunction() {
                         <a href="#">Penthouse</a> 
                     </div>
                     <div class="property-location">
-                        Tirane
+                        Tirana
                     </div>
                     <div class="property-price">$1,000,000</div>
                     <div class="contact-owner">
@@ -391,7 +391,7 @@ function myFunction() {
         </div>
 
         <div class="btn-holder">
-            <button class="more-btn" id="loadMore">Me Shume</button>
+            <button class="more-btn" id="loadMore">Load More</button>
 
         </div>
 
@@ -409,13 +409,13 @@ function myFunction() {
 
     <div id="newsletter">
         <div class="newsletter-content">
-            <h1>Regjistro Email Per Ofertat Me Te Mira</h1>
-            <p style="margin:5px 0;">Pas regjistrimit email mbetet <mark>pergjithmone</mark> </p>
+            <h1>Sign Up For The Best Offers</h1>
+            <p style="margin:5px 0;">After signing up, your e-mail stays <mark>forever</mark> </p>
             <form  method="post" id="newsletterForm">
-                <input type="text" id="newsletterEmail" class="newsletter-email" placeholder="Emaili Juaj"><br>
-                <label for="iAgree">Pajtohem me kushtet</label>
+                <input type="text" id="newsletterEmail" class="newsletter-email" placeholder="Your e-mail address"><br>
+                <label for="iAgree">I agree to the terms and conditions</label>
                 <input type="checkbox" id="iAgree" name="i_agree"> <br>
-                <button type="submit" class="newsletter-submit" >Regjistro</button>
+                <button type="submit" class="newsletter-submit" >Sign up</button>
 
             </form>
         </div>
@@ -476,7 +476,7 @@ function myFunction() {
             <address>
                 Ulpian&euml; Prishtin&euml;  Kosov&euml; 10000
             </address>
-            <a href="./files/pricing.pdf">&Ccedil;mimorja</a>
+            <a href="./files/pricing.pdf">Pricing</a>
         </div>
         <div id="menuFooter">
             <a href="index.html" class="menu-page "> Home </a> 
@@ -531,16 +531,16 @@ function myFunction() {
         if(agree.checked){
                if(validateEmail(email.value))
                {
-                   alert('Faleminderit per regjistirmin '+email.value);
+                   alert('Thank you for signing up '+email.value);
                    email.value='';
                    agree.checked=false;
                }
                else{
-                   alert('Email nuk eshte valid ose eshte i zbrazet');
+                   alert('Your e-mail is not valid or it is empty');
                }
         }
         else{
-            alert('Duhet te pranosh kushtet per tu regjistruar');
+            alert('You should agree to the terms and conditions to sign up');
         }
         
     });
