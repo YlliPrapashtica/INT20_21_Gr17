@@ -9,7 +9,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
     <script src="js/script.js"> </script>
-    <title>Document</title>
+    <title>Add A Property</title>
     <style>
         #oferta{
             background-color:#3F6FCE ;
@@ -354,7 +354,7 @@ var form=document.getElementById('uploadProperty');
         let file=document.getElementById('file').value;
 
         if(propertyName && propertyPrice && propertyLocation && file  && /^\d+$/g.test(propertyPrice)){
-            alert('Prona U Shtua');
+            alert('Property Added');
 
         }
         else{
@@ -364,13 +364,7 @@ var form=document.getElementById('uploadProperty');
         }
 
     });
-        // $('#uploadProperty').on('submit',function(e){
-          
-        //     e.preventDefault();
-        //     $(this).hide();
-        //     $('#succMsg').show();
-        // });
-    // });
+       
 });
 </script>
 </html>
