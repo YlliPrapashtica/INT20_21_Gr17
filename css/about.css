@@ -12,7 +12,7 @@
 }
 .Firstimagetxt p{
     transition:.7s;
-    font-size: 60px;
+    font-size: 100px;
 }
 
 
@@ -178,7 +178,7 @@ div.dl {
   width: 500px;
   padding: 10px;
   margin-left: 10%;
-  outline-style: solid;
+  outline-style: outset;
   outline-color: gray;
   outline-width: thick;
 

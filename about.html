@@ -9,11 +9,7 @@
     <title>Document</title>
     
 </head>
-<body style="background-image: url(img/background.jpg);">
-    
-   
-    
-<header class="header" id="myHeader">
+  <header class="header" id="nxtheader">
         <div class="contain">
         <div class="contain-row">
         <div class="contain-col">
@@ -22,11 +18,11 @@
         <nav class="main_nav">
         <ul>
         <li><a href="index.html"> Home </a></li>
-        <li><a href="about.html">About us </a></li>
+        <li class="active"><a href="about.html">About us </a></li>
         <li><a href="properties.html">Properties </a></li>
         <li><a href="services.html">Services </a></li>
         <li><a href="addProperty.html">Add a Property </a></li>
-        <li class="active"><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
         </ul>
         </nav>
         <div class="phone_num ml-auto">
@@ -41,17 +37,17 @@
 <script>
 window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+var header = document.getElementById("nxtheader");
+var stick = header.offsetTop;
 function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+  if (window.pageYOffset > stick) {
+    header.classList.add("stick");
   } else {
-    header.classList.remove("sticky");
+    header.classList.remove("stick");
   }
 }
 </script>
-<style>
+        <style>
         .header.stick{
             background:rgba(63,111,206,0.85);
         }
@@ -141,33 +137,38 @@ function myFunction() {
         .phone_num{
             display: none;
         }}
-
+       
         </style>
-        
+<body style="background-image: url('img/background.jpg');">
+    
+   
+     
+
         
           <div >
-          	<img id="Firstimage" src="img/about.jpg" >
+          	<img id="Firstimage" src="img/about.jpg" style="width: 100%" >
           	<div class="Firstimagetxt">
 
             <h1>Dream</h1><br>
             <p>Proparties Now In City</p><br>
             </div>
         </div>
+
     
 
-    <svg  width="320" height="250" >
+    <svg  width="23%" height="250" >
     	<circle cx="180" cy="120" r="48" stroke="blue"
     	stroke-width="50" fill="lightblue"></circle>
     </svg>
-    <svg width="320" height="250">
+    <svg width="23%" height="250">
     	<circle cx="180" cy="120" r="36" stroke="blue"
     	stroke-width="34" fill="lightblue"></circle>
     </svg>
-    <svg width="320" height="250">
+    <svg width="23%" height="250">
     	<circle cx="180" cy="120" r="36" stroke="blue"
     	stroke-width="34" fill="lightblue"></circle>
     </svg>
-    <svg width="320" height="250">
+    <svg width="23%" height="250">
     	<circle cx="180" cy="120" r="48" stroke="blue"
     	stroke-width="50" fill="lightblue">
     		
@@ -246,7 +247,7 @@ function myFunction() {
     </div>
     
 </div>
-<div style="max-width: 100%; padding-left: 12%">   
+<div style="max-width: 100%; padding-left: 19.2%">   
             <button id="TOPButton1" onclick="document.getElementById('img').src='img/1.jpg'" style="color: white"><b>Back to photo</b>  (1)</button>
              
              <img id="img" src="img/1.jpg" style="width:600px; height: 400px" >
