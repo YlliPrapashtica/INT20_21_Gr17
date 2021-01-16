@@ -10,8 +10,7 @@
     
 </head>
 <body style="background-image: url(img/background.jpg);">
-	<button onclick="topFunction()" id="TOPButton" title="Go to top">Top of the page</button>
-		
+    
    
     <div id="header"> 
         <div class="logo-container"> <img class="logo" src="img/logo.png" alt=""></div>
@@ -352,26 +351,7 @@
 
   </body>
   <script>
-	
-  mybutton = document.getElementById("TOPButton");
-
-
-  window.onscroll = function() {scrollFunction()};
-
-  function scrollFunction() {
-     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-     mybutton.style.display = "block";
-     } else {
-     mybutton.style.display = "none";
-     }
-     }
-
-  function topFunction() {
- 
-     document.documentElement.scrollTop = 0; 
-     }
-     //
-
+   
      function allowDrop(ev) {
   ev.preventDefault();
 }
